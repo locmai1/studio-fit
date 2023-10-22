@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /*** Fonts Face CSS ***/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /**** CSS Variables ****/
 
@@ -62,11 +61,6 @@ nav {
   padding: 0 128px 0 128px;
 }
 
-nav div {
-  display: flex;
-  flex-direction: row;
-}
-
 img {
   border: 0px !important;
   outline: none;
@@ -105,6 +99,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -221,7 +216,6 @@ h6,
 .h6,
 p,
 a {
-  font-family: "Helvetica", sans-serif;
 }
 
 /*** Heading CSS ***/
@@ -270,36 +264,11 @@ header {
 /* -=- Footer CSS -=- */
 footer {
   height: 184px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: black;
-  color: white;
-  text-align: center;
-  
+  padding: 0 128px 0 128px;
   display: flex;
-  align-items: center;
-}
-
-footer div {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin: auto;
-}
-
-footer p {
-  color: #FFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-footer a:hover {
-  color: gray;
+  align-items: center;
 }
 
 /* -=- Main Area CSS -=- */
