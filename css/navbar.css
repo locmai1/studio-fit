@@ -1,4 +1,4 @@
-.nav-logo-container {
+.NavLogoWrapper {
   width: 128px;
   height: 24px;
   display: flex;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.nav-logo-title {
+.NavLogoTitle {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -14,16 +14,21 @@
   line-height: 24px;
 }
 
-.nav-links-container {
+.NavLinksWrapper {
   width: 542px;
   height: 24px;
   justify-content: space-between;
 }
 
-.nav-link {
+.NavLink {
   color: white;
   line-height: 24px;
   font-size: 16px;
   font-weight: 700;
   text-decoration-line: underline;
+}
+
+.NavLink:hover {
+  color: gray;
+  text-decoration-line: none;
 }
