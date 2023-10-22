@@ -54,6 +54,20 @@ body {
   background-color: var(--primary-color);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  padding: 0 128px 0 128px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
   border: 0px !important;
   outline: none;
