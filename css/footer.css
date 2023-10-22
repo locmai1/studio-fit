@@ -1,0 +1,13 @@
+.FooterContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  align-items: center;
+  gap: 10px;
+}
+
+.FooterContentText {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
