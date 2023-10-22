@@ -42,6 +42,41 @@ body {
   margin-top: 24px;
 }
 
+.HomeHeader {
+  background: url(../img/HomeBanner.png) no-repeat center top;
+  background-size: cover;
+  padding: 150px 128px 148px;
+}
+
+.HomeHeaderButton {
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.HomeHeaderButtonsWrapper {
+  display: flex;
+  margin-top: 36px;
+  gap: 18px;
+}
+
+.HomeHeaderPinkButton {
+  background-color: #ff0058;
+  font-weight: 700;
+}
+
+.HomeHeaderSubtext {
+  font-size: 32px;
+  color: white;
+  margin-top: 24px;
+}
+
+.HomeHeaderWhiteButton {
+  background-color: white;
+}
+
 .PinkHeader {
   background-color: #ff0058;
 }
