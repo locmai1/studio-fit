@@ -1,10 +1,4 @@
-#ServicesBody {
-  display: flex;
-  flex-direction: column;
-  gap: 89px;
-  padding: 73px 128px;
-}
-
+/* Class CSS */
 .Service {
   display: flex;
   align-items: center;
@@ -31,4 +25,12 @@
 
 .ServiceDescription {
   font-size: 16px;
+}
+
+/* ID CSS*/
+#ServicesBody {
+  display: flex;
+  flex-direction: column;
+  gap: 89px;
+  padding: 73px 128px;
 }
