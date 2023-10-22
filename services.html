@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
+
     <!-- Favicon Included -->
     <link
       rel="icon"
@@ -17,51 +18,18 @@
       sizes="16x16"
       href="img/favicon-16x16.png"
     />
+
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/services.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <style>
-      #ServicesBody {
-        display: flex;
-        flex-direction: column;
-        gap: 89px;
-        padding: 73px 128px;
-      }
-
-      .Service {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 76px;
-      }
-
-      .ServiceImage {
-        border-radius: 6px;
-        width: 70%;
-        height: 70%;
-      }
-
-      .ServiceTextWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .ServiceTitle {
-        font-size: 20px;
-        font-weight: 700;
-      }
-
-      .ServiceDescription {
-        font-size: 16px;
-      }
-    </style>
   </head>
   <body>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        /* Services array to display on page */
         const services = [
           {
             title: "Strength Training",
@@ -91,6 +59,7 @@
 
         var servicesBody = document.getElementById("ServicesBody");
 
+        /* Put each service div onto the page */
         services.map((service, index) => {
           const serviceDiv = document.createElement("div");
           serviceDiv.classList.add("Service");
@@ -113,6 +82,7 @@
           textWrapper.appendChild(title);
           textWrapper.appendChild(description);
 
+          /* Alternate image/text styling on page */
           if (index % 2 === 0) {
             serviceDiv.appendChild(textWrapper);
             serviceDiv.appendChild(image);
