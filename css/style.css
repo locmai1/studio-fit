@@ -238,7 +238,39 @@ h6,
 header {}
 
 /* -=- Footer CSS -=- */
-footer {}
+footer {
+  height: 184px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+footer p {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer a:hover {
+  color: gray;
+}
 
 /* -=- Main Area CSS -=- */
 main {}
