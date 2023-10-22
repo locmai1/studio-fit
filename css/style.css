@@ -7,90 +7,89 @@
 
 /** use variables in css property like, background-color: var(--primary-color); */
 :root {
-  /* --- color variables --- */
-  --primary-color: #f9f9f9;
-  --secondary-color: #fff;
-  --border-color: #e8dede;
-  --text-primary-color: #292323;
-  --text-secondary-color: #ccc;
-  --text-selection-color: #b3d4fc;
+	/* --- color variables --- */
+	--primary-color: #f9f9f9;
+	--secondary-color: #fff;
+	--border-color: #e8dede;
+	--text-primary-color: #292323;
+	--text-secondary-color: #ccc;
+	--text-selection-color: #b3d4fc;
 }
 
 /* -=- Common Element CSS Start -=- */
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ::-moz-selection {
-  background: var(--text-selection-color);
-  text-shadow: none;
+	background: var(--text-selection-color);
+	text-shadow: none;
 }
 
 ::selection {
-  background: var(--text-selection-color);
-  text-shadow: none;
+	background: var(--text-selection-color);
+	text-shadow: none;
 }
 
 /* Prevent font size inflation */
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 html,
 body {
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-  line-height: 20px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-color);
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--primary-color);
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  height: 70px;
-  padding: 0 128px 0 128px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	height: 70px;
+	padding: 0 128px 0 128px;
 }
 
 nav div {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 img {
-  border: 0px !important;
-  outline: none;
-  width: 100%;
-  max-width: 100%;
-  display: block;
+	border: 0px !important;
+	outline: none;
+	width: 100%;
+	max-width: 100%;
+	display: block;
 }
 
 ul,
 ol {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 a {
-  text-decoration: none;
-  outline: none;
+	text-decoration: none;
+	outline: none;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
+	text-decoration-skip-ink: auto;
+	color: currentColor;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -104,21 +103,21 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
-  list-style: none;
+	list-style: none;
 }
 
 a:hover,
 a:focus,
 a:active,
 a:visited {
-  outline: none;
-  text-decoration: none;
+	outline: none;
+	text-decoration: none;
 }
 
 .btn:focus,
@@ -126,24 +125,24 @@ a:visited {
 .form-control:hover,
 .form-control:focus,
 .form-control:focus:active {
-  outline: none !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
 }
 
 p {
-  margin: 0px;
-  font-size: 20px;
-  line-height: 32px;
-  color: var(--text-primary-color);
-  font-weight: normal;
+	margin: 0px;
+	font-size: 20px;
+	line-height: 32px;
+	color: var(--text-primary-color);
+	font-weight: normal;
 }
 
 hr {
-  margin: 1em 0;
-  padding: 0;
-  flex-grow: 1;
-  border: 1px solid white;
+	margin: 1em 0;
+	padding: 0;
+	flex-grow: 1;
+	border: 1px solid white;
 }
 
 audio,
@@ -152,29 +151,29 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 input::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--text-secondary-color);
-  opacity: 1;
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: var(--text-secondary-color);
+	opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--text-secondary-color);
+	/* Internet Explorer 10-11 */
+	color: var(--text-secondary-color);
 }
 
 input::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--text-secondary-color);
+	/* Microsoft Edge */
+	color: var(--text-secondary-color);
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -182,29 +181,29 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 textarea {
-  resize: none;
+	resize: none;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
-  min-height: 10em;
+	min-height: 10em;
 }
 
 textarea::placeholder {
-  color: var(--text-secondary-color);
-  opacity: 1;
+	color: var(--text-secondary-color);
+	opacity: 1;
 }
 
 textarea:-ms-input-placeholder {
-  color: var(--text-secondary-color);
+	color: var(--text-secondary-color);
 }
 
 textarea::-ms-input-placeholder {
-  color: var(--text-secondary-color);
+	color: var(--text-secondary-color);
 }
 
 h1,
@@ -221,7 +220,7 @@ h6,
 .h6,
 p,
 a {
-  font-family: "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 }
 
 /*** Heading CSS ***/
@@ -251,55 +250,55 @@ h6,
 
 /* Common Class CSS related to text alignment*/
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 /* -=- Header CSS -=- */
 header {
-  padding: 177px 128px 69px;
+	padding: 177px 128px 69px;
 }
 
 /* -=- Footer CSS -=- */
 footer {
-  height: 184px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  
-  display: flex;
-  align-items: center;
+	height: 184px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
 }
 
 footer div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
 }
 
 footer p {
-  color: #FFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+	color: #fff;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 
 footer a:hover {
-  color: gray;
+	color: gray;
 }
 
 /* -=- Main Area CSS -=- */
@@ -315,7 +314,7 @@ main {
 /****** Responsive CSS Start ******/
 
 @media only screen and (min-width: 1200px) {
-  /* Add style according to viewports size */
+	/* Add style according to viewports size */
 }
 
 /****** Responsive CSS End ******/
