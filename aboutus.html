@@ -12,15 +12,38 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 	<!-- Main Stylesheet Included -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/aboutus.css">
 </head>
 
 <body>
+  <!-- use javascript to make this a hamburger menu -->
+  <nav class="NavContainer">
+    <a href="#" class="NavLogoWrapper NavContentWrapper">
+      <span class="NavLogoTitle NavText">Studio Fit</span>
+      <img src="img/logo.svg" />
+    </a>
+    <div class="NavLinksWrapper NavContentWrapper">
+      <a href="#" class="NavLink NavText">About Us</a>
+      <a href="#" class="NavLink NavText">Memberships</a>
+      <a href="#" class="NavLink NavText">Events</a>
+      <a href="#" class="NavLink NavText">Services</a>
+      <a href="#" class="NavLink NavText">Contact Us</a>
+      <a href="#" class="NavLink NavText">FAQ</a>
+    </div>
+  </nav>
 	<!-- Header Section -->
-	<header></header>
+	<header class="BlackHeader">
+    <div class="HeaderText">About Studio Fit</div>
+  </header>
+
+
+
 	<!-- Body Section -->
 	<main>
-		<div class="aboutDiv">
+    <div class="aboutDiv">
 			<p class="about">
 				At Studio Fit, we're more than a gym; we're a supportive community empowering individuals 
 				of all fitness levels. Our vision was to create a space fostering strength, empowerment, 
@@ -39,8 +62,20 @@
 			</p>
 		</div>
 	</main>
+
+
+
 	<!-- Footer Section -->
-	<footer></footer>
+	<footer class="FooterContainer">
+    <a href="#" class="FooterContentWrapper">
+      <span class="FooterContentText">Studio Fit</span>
+      <img src="img/logo.svg" />
+    </a>
+    <a href="" class="FooterContentWrapper">
+      <img src="img/phone.svg" />
+      <span class="FooterContentText">917-614-8888</span>
+    </a>
+  </footer>
 	<!-- Custom Js Included -->
 	<script src="js/script.js"></script>
 </body>
