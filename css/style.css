@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 /*** Fonts Face CSS ***/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /**** CSS Variables ****/
 
@@ -81,14 +80,22 @@ a:not([class]) {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -104,7 +111,7 @@ a:visited {
 .btn.focus,
 .form-control:hover,
 .form-control:focus,
-.form-control:focus:Active {
+.form-control:focus:active {
   outline: none !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
@@ -121,9 +128,8 @@ p {
 hr {
   margin: 1em 0;
   padding: 0;
-  display: block;
-  border: 0;
-  border-top: 1px solid var(--border-color);
+  flex-grow: 1;
+  border: 1px solid white;
 }
 
 audio,
@@ -158,8 +164,10 @@ input::-ms-input-placeholder {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -199,27 +207,33 @@ h6,
 .h6,
 p,
 a {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 /*** Heading CSS ***/
 h1,
-.h1 {}
+.h1 {
+}
 
 h2,
-.h2 {}
+.h2 {
+}
 
 h3,
-.h3 {}
+.h3 {
+}
 
 h4,
-.h4 {}
+.h4 {
+}
 
 h5,
-.h5 {}
+.h5 {
+}
 
 h6,
-.h6 {}
+.h6 {
+}
 
 /* Common Class CSS related to text alignment*/
 .text-center {
@@ -235,20 +249,22 @@ h6,
 }
 
 /* -=- Header CSS -=- */
-header {}
+header {
+  padding: 177px 128px 69px;
+}
 
 /* -=- Footer CSS -=- */
-footer {}
+footer {
+}
 
 /* -=- Main Area CSS -=- */
-main {}
+main {
+}
 
 /* -=- Keyframe CSS -=- */
 
-
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
 @media (prefers-reduced-motion) {
-    
 }
 
 /****** Responsive CSS Start ******/

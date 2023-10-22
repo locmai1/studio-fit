@@ -1,0 +1,51 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.BlackHeader {
+  background-color: black;
+}
+
+.BlueHeader {
+  background-color: #0093ff;
+}
+
+.ColorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.ContactUsHeader {
+  padding: 177px 128px 20px;
+}
+
+.DividerBlack {
+  border: 1px solid black;
+}
+
+.HeaderText {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.HeaderTextBlack {
+  color: black;
+}
+
+.HeaderSubtext {
+  color: white;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.PinkHeader {
+  background-color: #ff0058;
+}
+
+.YellowHeader {
+  background-color: #ffd000;
+}
