@@ -1,0 +1,33 @@
+/* Tag CSS */
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0px;
+  background-color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* Class CSS */
+.AnswerText {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  padding-inline: 128px;
+  line-height: 1.5;
+  padding-inline: 232px;
+}
+
+.QuestionText {
+  padding-block: 8px;
+  flex-shrink: 0;
+  color: #ff0058;
+  font-size: 24px;
+  font-weight: 600;
+  padding-inline: 232px;
+}

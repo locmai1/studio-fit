@@ -1,198 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Memberships</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memberships</title>
 
-		<!-- Favicon Included -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="img/favicon-32x32.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="img/favicon-16x16.png" />
-		<!-- Main Stylesheet Included -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
-		<link rel="stylesheet" type="text/css" href="css/header.css" />
-	</head>
+    <!-- Favicon Included -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
 
-	<style>
-		body {
-			font-family: Helvetica, sans-serif;
-		}
-		.membership {
-			display: flex;
-			width: 330px;
-			padding: 36px 24px;
-			align-items: center;
-			gap: 10px;
-			border-radius: 6px;
-			border: 3px solid #000;
-			margin-bottom: 32px;
-		}
+    <!-- Main Stylesheet Included -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/memberships.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  </head>
 
-		#membershipTitle {
-			color: #000;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-		}
+  <body>
+    <!-- Navbar -->
+    <nav class="NavContainer">
+      <a href="#" class="NavLogoWrapper NavContentWrapper">
+        <span class="NavLogoTitle NavText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <div class="NavLinksWrapper NavContentWrapper">
+        <a href="#" class="NavLink NavText">About Us</a>
+        <a href="#" class="NavLink NavText">Memberships</a>
+        <a href="#" class="NavLink NavText">Events</a>
+        <a href="#" class="NavLink NavText">Services</a>
+        <a href="#" class="NavLink NavText">Contact Us</a>
+        <a href="#" class="NavLink NavText">FAQ</a>
+      </div>
+    </nav>
 
-		#membershipCost {
-			color: #000;
-			font-size: 32px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-		}
-	</style>
-	<body>
-		<nav class="NavContainer">
-			<a href="#" class="NavLogoWrapper">
-				<span class="NavLogoTitle">Studio Fit</span>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none">
-					<path
-						d="M13.4001 21.9L12.0001 20.5L15.5501 16.95L7.0501 8.45001L3.5001 12L2.1001 10.6L3.5001 9.15001L2.1001 7.75001L4.2001 5.65001L2.8001 4.20001L4.2001 2.80001L5.6501 4.20001L7.7501 2.10001L9.1501 3.50001L10.6001 2.10001L12.0001 3.50001L8.4501 7.05001L16.9501 15.55L20.5001 12L21.9001 13.4L20.5001 14.85L21.9001 16.25L19.8001 18.35L21.2001 19.8L19.8001 21.2L18.3501 19.8L16.2501 21.9L14.8501 20.5L13.4001 21.9Z"
-						fill="white" />
-				</svg>
-			</a>
-			<div class="NavLinksWrapper">
-				<a href="#" class="NavLink">About Us</a>
-				<a href="#" class="NavLink">Memberships</a>
-				<a href="#" class="NavLink">Events</a>
-				<a href="#" class="NavLink">Services</a>
-				<a href="#" class="NavLink">Contact Us</a>
-				<a href="#" class="NavLink">FAQ</a>
-			</div>
-		</nav>
+    <!-- Header Section -->
+    <header class="BlueHeader ColorHeader">
+      <div class="HeaderText">Memberships</div>
+      <hr />
+    </header>
 
-		<header class="BlueHeader ColorHeader">
-			<div class="HeaderText">Memberships</div>
-			<hr />
-		</header>
+    <!-- Body Section -->
+    <section>
+      <div>
+        <div class="MembershipContainer MembershipSilver">
+          <div class="MembershipTitle">Silver</div>
+          <div class="MembershipCostContainer">
+            <div class="MembershipCost">$16</div>
+            <div>per month</div>
+          </div>
+        </div>
 
-		<section
-			style="
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				margin-inline: 128px;
-				padding-block: 24px;
-				height: 90vh;
-			">
-			<section>
-				<div
-					class="membership"
-					style="
-						background: #c4c4c4;
-						display: flex;
-						flex-direction: row;
-						justify-content: space-between;
-					">
-					<div id="membershipTitle">Silver</div>
-					<div
-						style="
-							display: flex;
-							flex-direction: row;
-							justify-content: space-between;
-							gap: 10px;
-							align-items: center;
-						">
-						<div id="membershipCost">$16</div>
-						<div>per month</div>
-					</div>
-				</div>
+        <ul>
+          <li>Access to our state-of-the-art gym facility.</li>
+          <li>Unlimited use of cardio and strength equipment.</li>
+          <li>Participation in group fitness classes.</li>
+          <li>Basic fitness assessments.</li>
+          <li>Discounted rates on personal training sessions.</li>
+          <li>Monthly membership option.</li>
+        </ul>
+      </div>
 
-				<ul style="max-width: 330px">
-					<li>Access to our state-of-the-art gym facility.</li>
-					<li>Unlimited use of cardio and strength equipment.</li>
-					<li>Participation in group fitness classes.</li>
-					<li>Basic fitness assessments.</li>
-					<li>Discounted rates on personal training sessions.</li>
-					<li>Monthly membership option.</li>
-				</ul>
-			</section>
+      <div>
+        <div class="MembershipContainer MembershipGold">
+          <div class="MembershipTitle">Gold</div>
+          <div class="MembershipCostContainer">
+            <div class="MembershipCost">$24</div>
+            <div>per month</div>
+          </div>
+        </div>
 
-			<section>
-				<div
-					class="membership"
-					style="
-						background: #ffd700;
-						display: flex;
-						flex-direction: row;
-						justify-content: space-between;
-					">
-					<div id="membershipTitle">Gold</div>
-					<div
-						style="
-							display: flex;
-							flex-direction: row;
-							justify-content: space-between;
-							gap: 10px;
-							align-items: center;
-						">
-						<div id="membershipCost">$24</div>
-						<div>per month</div>
-					</div>
-				</div>
+        <ul>
+          <li>All benefits of Silver Membership.</li>
+          <li>Priority access to popular group fitness classes.</li>
+          <li>Advanced fitness assessments and goal tracking.</li>
+          <li>Discounts on fitness apparel and accessories.</li>
+          <li>Option for semi-annual or annual membership.</li>
+        </ul>
+      </div>
 
-				<ul style="max-width: 330px">
-					<li>All benefits of Silver Membership.</li>
-					<li>Priority access to popular group fitness classes.</li>
-					<li>Advanced fitness assessments and goal tracking.</li>
-					<li>Discounts on fitness apparel and accessories.</li>
-					<li>Option for semi-annual or annual membership.</li>
-				</ul>
-			</section>
+      <div>
+        <div class="MembershipContainer MembershipPlatinum">
+          <div class="MembershipTitle">Platinum</div>
+          <div class="MembershipCostContainer">
+            <div class="MembershipCost">$40</div>
+            <div>per month</div>
+          </div>
+        </div>
 
-			<section>
-				<div
-					class="membership"
-					style="
-						background: #ebebeb;
-						display: flex;
-						flex-direction: row;
-						justify-content: space-between;
-					">
-					<div id="membershipTitle">Platinum</div>
-					<div
-						style="
-							display: flex;
-							flex-direction: row;
-							justify-content: space-between;
-							gap: 10px;
-							align-items: center;
-						">
-						<div id="membershipCost">$40</div>
-						<div>per month</div>
-					</div>
-				</div>
+        <ul>
+          <li>All benefits of Gold Membership.</li>
+          <li>Exclusive access to premium classes and training sessions.</li>
+          <li>
+            Complimentary personal training sessions. Nutritional guidance and
+            meal planning.
+          </li>
+          <li>Access to our relaxation and recovery amenities.</li>
+          <li>
+            Flexible membership terms, including annual and multi-year options.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-				<ul style="max-width: 330px">
-					<li>All benefits of Gold Membership.</li>
-					<li>Exclusive access to premium classes and training sessions.</li>
-					<li>
-						Complimentary personal training sessions. Nutritional guidance and
-						meal planning.
-					</li>
-					<li>Access to our relaxation and recovery amenities.</li>
-					<li>
-						Flexible membership terms, including annual and multi-year options.
-					</li>
-				</ul>
-			</section>
-		</section>
-	</body>
+    <!-- Footer Section -->
+    <footer class="FooterContainer">
+      <a href="#" class="FooterContentWrapper">
+        <span class="FooterContentText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <a href="" class="FooterContentWrapper">
+        <img src="img/phone.svg" />
+        <span class="FooterContentText">917-614-8888</span>
+      </a>
+    </footer>
+  </body>
 </html>

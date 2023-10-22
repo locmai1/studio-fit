@@ -1,144 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>FAQ Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Page</title>
 
-		<!-- Favicon Included -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="img/favicon-32x32.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="img/favicon-16x16.png" />
-		<!-- Main Stylesheet Included -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
-		<link rel="stylesheet" type="text/css" href="css/header.css" />
-	</head>
-	<style>
-		body {
-			font-family: Helvetica, sans-serif;
-			margin: 0px;
-			background-color: black;
-		}
-		.question {
-			padding-block: 8px;
-			flex-shrink: 0;
-			color: #ff0058;
-			font-size: 24px;
-			font-weight: 600;
-			padding-inline: 232px;
-		}
-		.answer {
-			color: #fff;
-			font-size: 20px;
-			font-weight: 400;
-			padding-inline: 128px;
-			line-height: 1.5;
-			padding-inline: 232px;
-		}
-	</style>
-	<body>
-		<nav class="NavContainer">
-			<a href="#" class="NavLogoWrapper">
-				<span class="NavLogoTitle">Studio Fit</span>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none">
-					<path
-						d="M13.4001 21.9L12.0001 20.5L15.5501 16.95L7.0501 8.45001L3.5001 12L2.1001 10.6L3.5001 9.15001L2.1001 7.75001L4.2001 5.65001L2.8001 4.20001L4.2001 2.80001L5.6501 4.20001L7.7501 2.10001L9.1501 3.50001L10.6001 2.10001L12.0001 3.50001L8.4501 7.05001L16.9501 15.55L20.5001 12L21.9001 13.4L20.5001 14.85L21.9001 16.25L19.8001 18.35L21.2001 19.8L19.8001 21.2L18.3501 19.8L16.2501 21.9L14.8501 20.5L13.4001 21.9Z"
-						fill="white" />
-				</svg>
-			</a>
-			<div class="NavLinksWrapper">
-				<a href="#" class="NavLink">About Us</a>
-				<a href="#" class="NavLink">Memberships</a>
-				<a href="#" class="NavLink">Events</a>
-				<a href="#" class="NavLink">Services</a>
-				<a href="#" class="NavLink">Contact Us</a>
-				<a href="#" class="NavLink">FAQ</a>
-			</div>
-		</nav>
-		<header class="BlackHeader">
-			<div class="HeaderText">FAQ</div>
-		</header>
-		<section
-			style="
-				display: flex;
-				flex-direction: column;
-				gap: 65px;
-				align-items: center;
-			">
-			<container>
-				<div class="question">How do I become a member of Studio Fit?</div>
-				<div class="answer">
-					Joining Studio Fit is easy! You can become a member by visiting our
-					facility in person or by signing up through our website. We offer
-					various membership options to fit your needs, whether you prefer a
-					monthly plan, a package of classes, or a long-term commitment. Our
-					friendly staff is always ready to assist you in choosing the
-					membership that aligns with your fitness goals.
-				</div>
-			</container>
+    <!-- Favicon Included -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
 
-			<container>
-				<div class="question">
-					What types of classes and fitness programs do you offer?
-				</div>
-				<div class="answer">
-					Studio Fit offers a diverse range of fitness classes and programs to
-					cater to a wide spectrum of interests and fitness levels. From
-					high-energy group workouts like HIIT and spinning to the serenity of
-					yoga and Pilates, we've got something for everyone. Our schedule is
-					designed to accommodate various time preferences, so you can find a
-					class that fits your busy lifestyle. Additionally, we provide personal
-					training sessions for a more individualized fitness experience.
-				</div>
-			</container>
+    <!-- Main Stylesheet Included -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/faq.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  </head>
 
-			<container>
-				<div class="question">
-					Can beginners join Studio Fit, or is it only for experienced fitness
-					enthusiasts?
-				</div>
-				<div class="answer">
-					Studio Fit welcomes individuals of all fitness levels, from beginners
-					to seasoned athletes. Our trainers are well-equipped to modify
-					exercises to suit your experience and capabilities. If you're just
-					starting your fitness journey, we recommend taking advantage of our
-					introductory sessions and orientations, where our trainers can help
-					you get comfortable with our facility and services. Our friendly
-					community is here to support and motivate you, no matter where you are
-					on your fitness path.
-				</div>
-			</container>
+  <body>
+    <!-- Navbar -->
+    <nav class="NavContainer">
+      <a href="#" class="NavLogoWrapper NavContentWrapper">
+        <span class="NavLogoTitle NavText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <div class="NavLinksWrapper NavContentWrapper">
+        <a href="#" class="NavLink NavText">About Us</a>
+        <a href="#" class="NavLink NavText">Memberships</a>
+        <a href="#" class="NavLink NavText">Events</a>
+        <a href="#" class="NavLink NavText">Services</a>
+        <a href="#" class="NavLink NavText">Contact Us</a>
+        <a href="#" class="NavLink NavText">FAQ</a>
+      </div>
+    </nav>
 
-			<container>
-				<div class="question">
-					What safety measures are in place at Studio Fit, especially in light
-					of COVID-19?
-				</div>
-				<div class="answer">
-					Your safety is our top priority. We have implemented strict hygiene
-					and safety protocols to ensure a clean and secure workout environment.
-					These measures include regular sanitization of equipment, social
-					distancing in classes, mask requirements as per local regulations, and
-					advanced air filtration systems. We also encourage members to follow
-					proper hand hygiene and health guidelines. For the most up-to-date
-					information on our safety measures, please contact our front desk.
-					Your health is our concern, and we're committed to creating a safe
-					fitness space for all our members.
-				</div>
-			</container>
-		</section>
-	</body>
+    <!-- Header Section -->
+    <header class="BlackHeader">
+      <div class="HeaderText">FAQ</div>
+    </header>
+
+    <!-- Body Section -->
+    <section>
+      <container>
+        <div class="QuestionText">How do I become a member of Studio Fit?</div>
+        <div class="AnswerText">
+          Joining Studio Fit is easy! You can become a member by visiting our
+          facility in person or by signing up through our website. We offer
+          various membership options to fit your needs, whether you prefer a
+          monthly plan, a package of classes, or a long-term commitment. Our
+          friendly staff is always ready to assist you in choosing the
+          membership that aligns with your fitness goals.
+        </div>
+      </container>
+
+      <container>
+        <div class="QuestionText">
+          What types of classes and fitness programs do you offer?
+        </div>
+        <div class="AnswerText">
+          Studio Fit offers a diverse range of fitness classes and programs to
+          cater to a wide spectrum of interests and fitness levels. From
+          high-energy group workouts like HIIT and spinning to the serenity of
+          yoga and Pilates, we've got something for everyone. Our schedule is
+          designed to accommodate various time preferences, so you can find a
+          class that fits your busy lifestyle. Additionally, we provide personal
+          training sessions for a more individualized fitness experience.
+        </div>
+      </container>
+
+      <container>
+        <div class="QuestionText">
+          Can beginners join Studio Fit, or is it only for experienced fitness
+          enthusiasts?
+        </div>
+        <div class="AnswerText">
+          Studio Fit welcomes individuals of all fitness levels, from beginners
+          to seasoned athletes. Our trainers are well-equipped to modify
+          exercises to suit your experience and capabilities. If you're just
+          starting your fitness journey, we recommend taking advantage of our
+          introductory sessions and orientations, where our trainers can help
+          you get comfortable with our facility and services. Our friendly
+          community is here to support and motivate you, no matter where you are
+          on your fitness path.
+        </div>
+      </container>
+
+      <container>
+        <div class="QuestionText">
+          What safety measures are in place at Studio Fit, especially in light
+          of COVID-19?
+        </div>
+        <div class="AnswerText">
+          Your safety is our top priority. We have implemented strict hygiene
+          and safety protocols to ensure a clean and secure workout environment.
+          These measures include regular sanitization of equipment, social
+          distancing in classes, mask requirements as per local regulations, and
+          advanced air filtration systems. We also encourage members to follow
+          proper hand hygiene and health guidelines. For the most up-to-date
+          information on our safety measures, please contact our front desk.
+          Your health is our concern, and we're committed to creating a safe
+          fitness space for all our members.
+        </div>
+      </container>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="FooterContainer">
+      <a href="#" class="FooterContentWrapper">
+        <span class="FooterContentText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <a href="" class="FooterContentWrapper">
+        <img src="img/phone.svg" />
+        <span class="FooterContentText">917-614-8888</span>
+      </a>
+    </footer>
+  </body>
 </html>
