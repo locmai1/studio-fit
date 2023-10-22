@@ -53,6 +53,20 @@ body {
   background-color: var(--primary-color);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  padding: 0 128px 0 128px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
   border: 0px !important;
   outline: none;
@@ -255,6 +269,37 @@ header {
 
 /* -=- Footer CSS -=- */
 footer {
+  height: 184px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+footer p {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer a:hover {
+  color: gray;
 }
 
 /* -=- Main Area CSS -=- */
