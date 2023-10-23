@@ -278,6 +278,11 @@ footer {
 main {
 }
 
+.BodyContainer {
+  width: 1280px;
+  margin: auto;
+}
+
 /* -=- Keyframe CSS -=- */
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion */
