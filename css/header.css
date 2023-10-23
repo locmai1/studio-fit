@@ -25,8 +25,6 @@
   color: white;
   font-size: 36px;
   font-weight: 700;
-  width: 1024px;
-  margin: auto;
 }
 
 .HeaderTextBlack {
@@ -35,7 +33,6 @@
 
 .HeaderSubtext {
   color: white;
-  width: 1024px;
   font-size: 24px;
   margin: 24px auto auto auto;
 }
@@ -85,4 +82,15 @@
 
 .Header {
   margin: auto;
+}
+
+.HeaderDivider {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.HeaderPlain {
+  width: 1024px;
 }
