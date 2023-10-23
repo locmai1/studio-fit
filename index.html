@@ -30,10 +30,37 @@
   <body>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        const benefitsText = {
+          silver: [
+            "First 3 months get 50% off",
+            "Access to all services",
+            "Personalized workout plan",
+            "Bring 1 guest anytime",
+          ],
+          gold: [
+            "Priority access to classes",
+            "Advanced fitness tracking",
+            "Discount on apparel",
+            "Semi-annual membership",
+          ],
+          platinum: [
+            "Exclusive access to classes",
+            "Relaxation amenities",
+            "Personal recovery trainer",
+            "Nutritional guidance",
+          ],
+        };
+
         const silverButton = document.getElementsByClassName("SilverButton")[0];
         const goldButton = document.getElementsByClassName("GoldButton")[0];
         const platinumButton =
           document.getElementsByClassName("PlatinumButton")[0];
+
+        const membershipBenefits = document
+          .getElementsByClassName("MembershipBenefitsWrapper")[0]
+          .getElementsByClassName("MembershipBenefits");
+
+        const membershipBenefitsArray = [...membershipBenefits];
 
         silverButton.addEventListener("click", () => {
           silverButton.style.backgroundColor = "white";
@@ -42,6 +69,12 @@
           goldButton.style.color = "white";
           platinumButton.style.backgroundColor = "#0093FF";
           platinumButton.style.color = "white";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.silver[index])
+          );
         });
 
         goldButton.addEventListener("click", () => {
@@ -51,6 +84,12 @@
           goldButton.style.color = "#0093FF";
           platinumButton.style.backgroundColor = "#0093FF";
           platinumButton.style.color = "white";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.gold[index])
+          );
         });
 
         platinumButton.addEventListener("click", () => {
@@ -60,6 +99,12 @@
           goldButton.style.color = "white";
           platinumButton.style.backgroundColor = "white";
           platinumButton.style.color = "#0093FF";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.platinum[index])
+          );
         });
       });
     </script>
@@ -145,6 +190,7 @@
           "
         >
           <div
+            class="MembershipBenefitsWrapper"
             style="
               display: flex;
               flex-direction: column;
@@ -156,6 +202,7 @@
             "
           >
             <div
+              class="MembershipBenefits"
               style="
                 display: flex;
                 align-items: center;
@@ -170,6 +217,7 @@
               <img src="img/checkmark-circle.svg" />
             </div>
             <div
+              class="MembershipBenefits"
               style="
                 display: flex;
                 align-items: center;
@@ -183,6 +231,7 @@
               <img src="img/checkmark-circle.svg" />
             </div>
             <div
+              class="MembershipBenefits"
               style="
                 display: flex;
                 align-items: center;
@@ -196,6 +245,7 @@
               <img src="img/checkmark-circle.svg" />
             </div>
             <div
+              class="MembershipBenefits"
               style="
                 display: flex;
                 align-items: center;
