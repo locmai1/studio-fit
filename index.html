@@ -24,9 +24,46 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
   </head>
 
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const silverButton = document.getElementsByClassName("SilverButton")[0];
+        const goldButton = document.getElementsByClassName("GoldButton")[0];
+        const platinumButton =
+          document.getElementsByClassName("PlatinumButton")[0];
+
+        silverButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "white";
+          silverButton.style.color = "#0093FF";
+          goldButton.style.backgroundColor = "#0093FF";
+          goldButton.style.color = "white";
+          platinumButton.style.backgroundColor = "#0093FF";
+          platinumButton.style.color = "white";
+        });
+
+        goldButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "#0093FF";
+          silverButton.style.color = "white";
+          goldButton.style.backgroundColor = "white";
+          goldButton.style.color = "#0093FF";
+          platinumButton.style.backgroundColor = "#0093FF";
+          platinumButton.style.color = "white";
+        });
+
+        platinumButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "#0093FF";
+          silverButton.style.color = "white";
+          goldButton.style.backgroundColor = "#0093FF";
+          goldButton.style.color = "white";
+          platinumButton.style.backgroundColor = "white";
+          platinumButton.style.color = "#0093FF";
+        });
+      });
+    </script>
+
     <!-- use javascript to make this a hamburger menu -->
     <nav class="NavContainer">
       <a href="./index.html" class="NavLogoWrapper NavContentWrapper">
@@ -50,15 +87,538 @@
         For the first 3 months, every member gets 50% off
       </div>
       <div class="HomeHeaderButtonsWrapper">
-        <button class="HomeHeaderButton HomeHeaderPinkButton">
+        <a
+          class="HomeHeaderButton HomeHeaderPinkButton"
+          style="color: black"
+          href="./memberships.html"
+        >
           Sign up now
-        </button>
-        <button class="HomeHeaderButton HomeHeaderWhiteButton">About Us</button>
+        </a>
+        <a
+          class="HomeHeaderButton HomeHeaderWhiteButton"
+          style="color: black"
+          href="./aboutus.html"
+          >About Us</a
+        >
       </div>
     </header>
 
     <!-- Body Section -->
-    <main></main>
+    <main>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: #0093ff;
+          padding: 100px 128px 81px;
+        "
+      >
+        <div
+          style="
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+          "
+        >
+          Our Membership Offers
+        </div>
+        <div
+          style="
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+          "
+        >
+          Explore and compare the benefits of our silver, gold, and platinum
+          memberships.
+        </div>
+        <div
+          style="
+            display: flex;
+            gap: 88px;
+            margin-top: 52px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 94px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+              background-color: white;
+              padding: 64px 48px;
+              border-radius: 6px;
+              width: 50%;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                color: #0093ff;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: space-between;
+                gap: 30px;
+              "
+            >
+              <span>First 3 months get 50% off</span>
+              <img src="img/checkmark-circle.svg" />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                color: #0093ff;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: space-between;
+              "
+            >
+              <span>Access to all services</span>
+              <img src="img/checkmark-circle.svg" />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                color: #0093ff;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: space-between;
+              "
+            >
+              <span>Personalized workout plan</span>
+              <img src="img/checkmark-circle.svg" />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                color: #0093ff;
+                font-size: 20px;
+                font-weight: 600;
+                justify-content: space-between;
+              "
+            >
+              <span>Bring 1 guest anytime</span>
+              <img src="img/checkmark-circle.svg" />
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; gap: 23px; width: 50%"
+          >
+            <button
+              class="SilverButton"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 36px 24px;
+                border-radius: 6px;
+                border: 3px solid white;
+                background-color: white;
+                color: #0093ff;
+                gap: 50px;
+                cursor: pointer;
+              "
+            >
+              <span style="font-size: 24px; font-weight: 700">Silver</span>
+              <span style="display: flex; gap: 10px">
+                <span style="font-size: 32px; font-weight: 700">$16</span>
+                <span style="font-size: 16px">per month</span>
+              </span>
+            </button>
+            <button
+              class="GoldButton"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 36px 24px;
+                border-radius: 6px;
+                background-color: #0093ff;
+                border: 3px solid white;
+                color: white;
+                gap: 50px;
+                cursor: pointer;
+              "
+            >
+              <span style="font-size: 24px; font-weight: 700">Gold</span>
+              <span style="display: flex; gap: 10px">
+                <span style="font-size: 32px; font-weight: 700">$24</span>
+                <span style="font-size: 16px">per month</span>
+              </span>
+            </button>
+            <button
+              class="PlatinumButton"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 36px 24px;
+                border-radius: 6px;
+                background-color: #0093ff;
+                border: 3px solid white;
+                color: white;
+                gap: 50px;
+                cursor: pointer;
+              "
+            >
+              <span style="font-size: 24px; font-weight: 700">Platinum</span>
+              <span style="display: flex; gap: 10px">
+                <span style="font-size: 32px; font-weight: 700">$40</span>
+                <span style="font-size: 16px">per month</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <a
+          style="
+            padding: 16px 24px;
+            border-radius: 12px;
+            background-color: #ff0058;
+            border: none;
+            align-self: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+          "
+          href="./memberships.html"
+        >
+          Learn more
+        </a>
+      </div>
+      <div style="background-color: #ffd000; padding: 51px 127px 130px">
+        <div class="ColorHeader">
+          <div class="HeaderText HeaderTextBlack">Our Services</div>
+          <hr class="DividerBlack" />
+        </div>
+        <div
+          style="
+            display: flex;
+            gap: 47px;
+            justify-content: space-between;
+            margin-top: 65px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 24px;
+              background-color: white;
+              border-radius: 6px;
+              width: 20%;
+            "
+          >
+            <div>
+              <div style="font-size: 20px; font-weight: 700">
+                Strength Training
+              </div>
+              <div style="font-size: 16px; margin-top: 10px">
+                We provide personal trainers to help you maintain your workout
+                goals.
+              </div>
+            </div>
+            <a
+              style="
+                color: #ff0058;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration-line: underline;
+                margin-top: 50px;
+              "
+              href="./services.html"
+            >
+              Read More
+            </a>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 24px;
+              background-color: white;
+              border-radius: 6px;
+              width: 20%;
+            "
+          >
+            <div>
+              <div style="font-size: 20px; font-weight: 700">
+                Pilates Classes
+              </div>
+              <div style="font-size: 16px; margin-top: 10px">
+                Pilates classes are free for 18 and under! Join us for Barre and
+                Reformer lessons.
+              </div>
+            </div>
+            <a
+              style="
+                color: #ff0058;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration-line: underline;
+                margin-top: 50px;
+              "
+              href="./services.html"
+            >
+              Read More
+            </a>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 24px;
+              background-color: white;
+              border-radius: 6px;
+              width: 20%;
+            "
+          >
+            <div>
+              <div style="font-size: 20px; font-weight: 700">Dance Studio</div>
+              <div style="font-size: 16px; margin-top: 10px">
+                A dance studio with all-round mirrors is available for booking.
+              </div>
+            </div>
+            <a
+              style="
+                color: #ff0058;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration-line: underline;
+                margin-top: 50px;
+              "
+              href="./services.html"
+            >
+              Read More
+            </a>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding: 24px;
+              background-color: white;
+              border-radius: 6px;
+              width: 20%;
+            "
+          >
+            <div>
+              <div style="font-size: 20px; font-weight: 700">
+                Massage Chairs
+              </div>
+              <div style="font-size: 16px; margin-top: 10px">
+                Cool down and stretch your muscles after a hard day of
+                exercising.
+              </div>
+            </div>
+            <a
+              style="
+                color: #ff0058;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration-line: underline;
+                margin-top: 50px;
+              "
+              href="./services.html"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          padding: 65px 128px 70px;
+        "
+      >
+        <div style="font-size: 32px; font-weight: 700; text-align: center">
+          Upcoming Events
+        </div>
+        <div style="font-size: 20px; text-align: center; margin-top: 30px">
+          Look out for upcoming events at our gym!
+        </div>
+        <div
+          style="
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            border-radius: 8px;
+            background-color: black;
+            margin-top: 60px;
+          "
+        >
+          <div style="display: flex; flex-direction: column; gap: 16px">
+            <div
+              style="
+                padding: 10px;
+                border: 1px solid #ff0058;
+                background: rgba(255, 0, 88, 0.2);
+                color: #ff0058;
+                font-size: 20px;
+                font-weight: 700;
+                width: fit-content;
+              "
+            >
+              27 Nov
+            </div>
+            <div style="font-size: 24px; font-weight: 700; color: white">
+              Pilates Reformer Class for Beginners
+            </div>
+            <div style="font-size: 16px; color: white">
+              Join our class and discover the transformative power of Pilates in
+              a small, supportive class led by certified instructors. Perfect
+              for newcomers, you'll learn foundational movements, improve your
+              strength and flexibility, and leave with a heightened mind-body
+              connection.
+            </div>
+            <button
+              style="
+                width: fit-content;
+                padding: 8px;
+                border-radius: 6px;
+                background-color: #ff0058;
+                border: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                cursor: pointer;
+              "
+            >
+              Register Now
+            </button>
+          </div>
+          <img src="img/PilatesClass.png" style="border-radius: 10px" />
+        </div>
+        <div
+          style="
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            border-radius: 8px;
+            background-color: black;
+            margin-top: 60px;
+          "
+        >
+          <div style="display: flex; flex-direction: column; gap: 16px">
+            <div
+              style="
+                padding: 10px;
+                border: 1px solid #ff0058;
+                background: rgba(255, 0, 88, 0.2);
+                color: #ff0058;
+                font-size: 20px;
+                font-weight: 700;
+                width: fit-content;
+              "
+            >
+              27 Nov
+            </div>
+            <div style="font-size: 24px; font-weight: 700; color: white">
+              Strength Training Class
+            </div>
+            <div style="font-size: 16px; color: white">
+              Elevate your fitness with our class, suitable for all levels. Join
+              us to build muscle, increase endurance, and experience the
+              benefits of a full-body workout under the expert guidance of our
+              trainers.
+            </div>
+            <button
+              style="
+                width: fit-content;
+                padding: 8px;
+                border-radius: 6px;
+                background-color: #ff0058;
+                border: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                cursor: pointer;
+              "
+            >
+              Register Now
+            </button>
+          </div>
+          <img src="img/StrengthClass.png" style="border-radius: 10px" />
+        </div>
+        <a
+          style="
+            margin-top: 28px;
+            width: fit-content;
+            padding: 16px 24px;
+            border-radius: 12px;
+            background-color: #ff0058;
+            border: none;
+            align-self: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            cursor: pointer;
+          "
+          href="./events.html"
+        >
+          View all events
+        </a>
+      </div>
+      <div style="background-color: black; padding: 58px 128px 160px">
+        <div class="ColorHeader BlackHeader">
+          <div class="HeaderText">Contact Us</div>
+          <hr />
+        </div>
+        <div class="HeaderSubtext" style="margin-top: 34px">
+          Fill out the form to receive notifications and updates!
+        </div>
+        <div
+          style="
+            background-color: white;
+            border-radius: 10px;
+            padding: 48px;
+            margin-top: 94px;
+            margin-inline: 200px;
+          "
+        >
+          <form>
+            <div class="ContactField">
+              <label for="name">Name</label>
+              <input type="text" id="InputField" />
+            </div>
+
+            <div class="ContactField">
+              <label for="email">E-mail</label>
+              <input type="text" id="InputField" />
+            </div>
+
+            <div class="ContactField">
+              <label for="number">Phone Number</label>
+              <input type="text" id="InputField" />
+            </div>
+
+            <div class="ContactField">
+              <label>Message</label>
+              <textarea id="InputField" style="width: 100%"></textarea>
+            </div>
+
+            <input class="ContactSubmitButton" type="submit" />
+          </form>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer Section -->
     <footer class="FooterContainer">

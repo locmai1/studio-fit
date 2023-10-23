@@ -49,6 +49,7 @@ section {
   border: none;
   width: 100%;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* ID CSS */
