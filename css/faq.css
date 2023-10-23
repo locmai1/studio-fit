@@ -6,7 +6,9 @@ body {
 }
 
 section {
+  width: 1280px;
   display: flex;
+  margin: auto;
   flex-direction: column;
   gap: 65px;
   align-items: center;
@@ -28,6 +30,7 @@ section {
   flex-shrink: 0;
   color: #ff0058;
   font-size: 24px;
+  line-height: 1.5;
   font-weight: 600;
   padding-inline: 232px;
 }
