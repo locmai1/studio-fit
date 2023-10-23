@@ -5,6 +5,11 @@
   padding: 100px 128px 81px;
 }
 
+.HomeSectionContent {
+  width: 1024px;
+  margin: auto;
+}
+
 .MembershipOffersTitle {
   font-size: 32px;
   font-weight: 700;
@@ -216,7 +221,7 @@
 }
 
 .UpcomingEventsPinkButton {
-  margin-top: 28px;
+  margin-top:28px;
   width: fit-content;
   padding: 16px 24px;
   border-radius: 12px;
