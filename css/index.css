@@ -1,0 +1,248 @@
+.MembershipOffersWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #0093ff;
+  padding: 100px 128px 81px;
+}
+
+.HomeSectionContent {
+  width: 1024px;
+  margin: auto;
+}
+
+.MembershipOffersTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.MembershipOffersSubtitle {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.MembershipOffersMainContent {
+  display: flex;
+  gap: 88px;
+  margin-top: 52px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.MembershipBenefitsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background-color: white;
+  padding: 64px 48px;
+  border-radius: 6px;
+  width: 50%;
+}
+
+.MembershipBenefits {
+  display: flex;
+  align-items: center;
+  color: #0093ff;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.MembershipButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 50%;
+}
+
+.MembershipButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 24px;
+  border-radius: 6px;
+  border: 3px solid white;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.Selected {
+  background-color: white;
+  color: #0093ff;
+}
+
+.Unselected {
+  background-color: #0093ff;
+  color: white;
+}
+
+.MembershipButtonTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.MembershipButtonTextWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.MembershipButtonCostText {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.MembershipButtonSubtext {
+  font-size: 16px;
+}
+
+.MembershipLearnMoreButton {
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #ff0058;
+  border: none;
+  align-self: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ServicesWrapper {
+  background-color: #ffd000;
+  padding: 51px 127px 130px;
+}
+
+.ServicesBoxesWrapper {
+  display: flex;
+  gap: 47px;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.ServicesBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: white;
+  border-radius: 6px;
+  width: 20%;
+}
+
+.ServicesBoxTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ServicesBoxText {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ServicesBoxLink {
+  color: #ff0058;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  margin-top: 50px;
+}
+
+.UpcomingEventsWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 65px 128px 70px;
+}
+
+.UpcomingEventsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.UpcomingEventsSubtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.UpcomingEventsBlackContainer {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: black;
+  margin-top: 60px;
+}
+
+.UpcomingEventsBlackContainerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.UpcomingEventsDateText {
+  padding: 10px;
+  border: 1px solid #ff0058;
+  background: rgba(255, 0, 88, 0.2);
+  color: #ff0058;
+  font-size: 20px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.UpcomingEventsBlackContainerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.UpcomingEventsBlackContainerText {
+  font-size: 16px;
+  color: white;
+}
+
+.UpcomingEventsBlackContainerButton {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #ff0058;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.UpcomingEventsPinkButton {
+  margin-top:28px;
+  width: fit-content;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #ff0058;
+  border: none;
+  align-self: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ContactUsWrapper {
+  background-color: black;
+  padding: 58px 128px 160px;
+}
+
+.ContactUsFormWrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 48px;
+  margin-top: 94px;
+  margin-inline: 200px;
+}

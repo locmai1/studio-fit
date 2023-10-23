@@ -1,8 +1,7 @@
 /* Tag CSS */
 body {
-	font-family: Helvetica, sans-serif;
-	margin: 0px;
-	background-color: black;
+  margin: 0px;
+  background-color: black;
 }
 
 form {
@@ -41,14 +40,15 @@ section {
 }
 
 .ContactSubmitButton {
-	font-size: 16px;
-	font-weight: 700;
-	color: white;
-	background-color: #ff0058;
-	border-radius: 8px;
-	border: none;
-	width: 100%;
-	padding: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff0058;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
 }
 
 /* ID CSS */

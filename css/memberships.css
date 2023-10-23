@@ -10,10 +10,18 @@ section {
   margin-inline: 128px;
   padding-block: 24px;
   height: 90vh;
+  width: 1024px;
+  margin: auto;
 }
 
 ul {
-  max-width: 330px;
+  max-width: 300px;
+  list-style-position: inside;
+  margin: auto;
+}
+
+li {
+  margin: 10px 0 10px 0;
 }
 
 /* Class CSS */
