@@ -34,7 +34,7 @@
 .HeaderSubtext {
   color: white;
   font-size: 24px;
-  margin-top: 24px;
+  margin: 24px auto auto auto;
 }
 
 .HomeHeader {
@@ -78,4 +78,19 @@
 
 .YellowHeader {
   background-color: #ffd000;
+}
+
+.Header {
+  margin: auto;
+}
+
+.HeaderDivider {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.HeaderPlain {
+  width: 1024px;
 }
