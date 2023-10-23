@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
 
-    <title>Studio Fit</title>
     <!-- Favicon Included -->
     <link
       rel="icon"
@@ -22,12 +21,12 @@
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
-
   <body>
-    <!-- use javascript to make this a hamburger menu -->
+    <!-- Navbar -->
     <nav class="NavContainer">
       <a href="#" class="NavLogoWrapper NavContentWrapper">
         <span class="NavLogoTitle NavText">Studio Fit</span>
@@ -44,21 +43,41 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="HomeHeader">
-      <div class="HeaderText">Join Studio Fit Now</div>
-      <div class="HomeHeaderSubtext">
-        For the first 3 months, every member gets 50% off
-      </div>
-      <div class="HomeHeaderButtonsWrapper">
-        <button class="HomeHeaderButton HomeHeaderPinkButton">
-          Sign up now
-        </button>
-        <button class="HomeHeaderButton HomeHeaderWhiteButton">About Us</button>
+    <header class="BlackHeader ContactUsHeader">
+      <div class="HeaderText">Contact Us</div>
+      <div class="HeaderSubtext">
+        Fill out the form to receive notifications and updates!
       </div>
     </header>
 
     <!-- Body Section -->
-    <main></main>
+    <main>
+      <section>
+        <form>
+          <div class="ContactField">
+            <label for="name">Name</label>
+            <input type="text" id="InputField" />
+          </div>
+
+          <div class="ContactField">
+            <label for="email">E-mail</label>
+            <input type="text" id="InputField" />
+          </div>
+
+          <div class="ContactField">
+            <label for="number">Phone Number</label>
+            <input type="text" id="InputField" />
+          </div>
+
+          <div class="ContactField">
+            <label>Message</label>
+            <textarea id="InputField" style="width: 100%"></textarea>
+          </div>
+
+          <input class="ContactSubmitButton" type="submit" />
+        </form>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="FooterContainer">
@@ -71,7 +90,5 @@
         <span class="FooterContentText">917-614-8888</span>
       </a>
     </footer>
-    <!-- Custom Js Included -->
-    <script src="js/script.js"></script>
   </body>
 </html>
