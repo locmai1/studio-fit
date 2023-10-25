@@ -95,3 +95,15 @@
 .HeaderPlain {
   width: 1024px;
 }
+
+@media (max-width: 600px) {
+  .HeaderDivider {
+    width: 100%;
+    gap: 28px;
+    align-items: center;
+  }
+
+  header {
+    padding: 34px 24px;
+  }
+}
