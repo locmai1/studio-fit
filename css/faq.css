@@ -1,35 +1,53 @@
 /* Tag CSS */
 body {
-  margin: 0px;
-  background-color: black;
+	margin: 0px;
+	background-color: black;
 }
 
 section {
-  width: 1280px;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 65px;
-  align-items: center;
-  margin-bottom: 100px;
+	width: 100%;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 65px;
+	align-items: center;
+	margin-bottom: 100px;
 }
 
 /* Class CSS */
-.AnswerText {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  padding-inline: 128px;
-  line-height: 1.5;
-  padding-inline: 232px;
+.QuestionText {
+	padding-block: 8px;
+	flex-shrink: 0;
+	color: #ff0058;
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: 600;
+	padding-inline: 20%;
 }
 
-.QuestionText {
-  padding-block: 8px;
-  flex-shrink: 0;
-  color: #ff0058;
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 600;
-  padding-inline: 232px;
+.AnswerText {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	padding-inline: 128px;
+	line-height: 1.5;
+	padding-inline: 20%;
+}
+
+@media (max-width: 600px) {
+	.desktop {
+		display: none;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	.QuestionText {
+		padding-inline: 20%;
+	}
+
+	.AnswerText {
+		padding-inline: 20%;
+	}
 }
