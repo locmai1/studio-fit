@@ -1,4 +1,86 @@
-.EventsContainer {
-  height: 1000px;
-  padding: 0 128px 0 128px;
+.UpcomingEventsWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 65px 128px 70px;
+}
+
+.UpcomingEvents {
+  width: 1024px;
+  margin: auto;
+}
+
+.UpcomingEventsTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.UpcomingEventsSubtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.UpcomingEventsBlackContainer {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: black;
+  margin-top: 60px;
+}
+
+.UpcomingEventsBlackContainerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.UpcomingEventsDateText {
+  padding: 10px;
+  border: 1px solid #ff0058;
+  background: rgba(255, 0, 88, 0.2);
+  color: #ff0058;
+  font-size: 20px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.UpcomingEventsBlackContainerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.UpcomingEventsBlackContainerText {
+  font-size: 16px;
+  color: white;
+}
+
+.UpcomingEventsBlackContainerButton {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #ff0058;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.UpcomingEventsPinkButton {
+  margin-top:28px;
+  width: fit-content;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #ff0058;
+  border: none;
+  align-self: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
 }
