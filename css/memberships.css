@@ -10,7 +10,7 @@ section {
   margin-inline: 128px;
   padding-block: 24px;
   height: 90vh;
-  width: 1024px;
+  /* width: 1024px; */
   margin: auto;
 }
 
@@ -27,7 +27,7 @@ li {
 /* Class CSS */
 .MembershipContainer {
   display: flex;
-  width: 330px;
+  max-width: 330px;
   padding: 36px 24px;
   align-items: center;
   gap: 10px;
@@ -79,4 +79,16 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media (max-width: 910px) {
+  section {
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  ul {
+    margin-bottom: 58px;
+  }
 }
