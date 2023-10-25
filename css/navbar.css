@@ -24,6 +24,11 @@
   text-decoration-line: underline;
 }
 
+.MenuToggle {
+  display: none;
+  background-color: black;
+}
+
 .NavText {
   font-weight: 700;
   color: white;
@@ -33,4 +38,31 @@
 .NavLink:hover {
   color: gray;
   text-decoration-line: none;
+}
+
+@media screen and (max-width: 600px) {
+  .NavContainer {
+    position: relative;
+  }
+
+  .NavLinksWrapper {
+    height: 250px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .MenuToggle {
+    display: block;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+  }
 }
