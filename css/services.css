@@ -36,3 +36,45 @@
   width: 1280px;
   margin: auto;
 }
+
+#ServicesBodyMobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #ServicesBody {
+    display: none;
+  }
+
+  #ServicesBodyMobile {
+    display: block;
+    padding: 57px 0px 25px;
+  }
+
+  .ServiceTextWrapperLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 24px;
+    padding-right: 195px;
+    margin-bottom: 40px;
+  }
+
+  .ServiceTextWrapperRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 195px;
+    padding-right: 24px;
+    margin-bottom: 40px;
+  }
+
+  .Service {
+    display: block;
+  }
+
+  .ServiceImage {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
