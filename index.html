@@ -1,73 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio Fit</title>
+    <!-- Favicon Included -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <!-- Main Stylesheet Included -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
 
-	<title>Studio Fit</title>
-	<!-- Favicon Included -->
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	<!-- Main Stylesheet Included -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
-</head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const benefitsText = {
+          silver: [
+            "First 3 months get 50% off",
+            "Access to all services",
+            "Personalized workout plan",
+            "Bring 1 guest anytime",
+          ],
+          gold: [
+            "Priority access to classes",
+            "Advanced fitness tracking",
+            "Discount on apparel",
+            "Semi-annual membership",
+          ],
+          platinum: [
+            "Exclusive access to classes",
+            "Relaxation amenities",
+            "Personal recovery trainer",
+            "Nutritional guidance",
+          ],
+        };
 
-<body>
-  <!-- use javascript to make this a hamburger menu -->
-  <nav class="NavContainer">
-    <a href="#" class="NavLogoWrapper NavContentWrapper">
-      <span class="NavLogoTitle NavText">Studio Fit</span>
-      <img src="img/logo.svg" />
-    </a>
-    <div class="NavLinksWrapper NavContentWrapper">
-      <a href="#" class="NavLink NavText">About Us</a>
-      <a href="#" class="NavLink NavText">Memberships</a>
-      <a href="#" class="NavLink NavText">Events</a>
-      <a href="#" class="NavLink NavText">Services</a>
-      <a href="#" class="NavLink NavText">Contact Us</a>
-      <a href="#" class="NavLink NavText">FAQ</a>
-    </div>
-  </nav>
-	<!-- Header Section -->
-	<header class="HomeHeader">
-    <div class="HeaderText">Join Studio Fit Now</div>
-    <div class="HomeHeaderSubtext">
-      For the first 3 months, every member gets 50% off
-    </div>
-    <div class="HomeHeaderButtonsWrapper">
-      <button class="HomeHeaderButton HomeHeaderPinkButton">
-        Sign up now
-      </button>
-      <button class="HomeHeaderButton HomeHeaderWhiteButton">About Us</button>
-    </div>
-  </header>
+        const silverButton = document.getElementsByClassName("SilverButton")[0];
+        const goldButton = document.getElementsByClassName("GoldButton")[0];
+        const platinumButton =
+          document.getElementsByClassName("PlatinumButton")[0];
+
+        const membershipBenefits = document
+          .getElementsByClassName("MembershipBenefitsWrapper")[0]
+          .getElementsByClassName("MembershipBenefits");
+
+        const membershipBenefitsArray = [...membershipBenefits];
+
+        silverButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "white";
+          silverButton.style.color = "#0093FF";
+          goldButton.style.backgroundColor = "#0093FF";
+          goldButton.style.color = "white";
+          platinumButton.style.backgroundColor = "#0093FF";
+          platinumButton.style.color = "white";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.silver[index])
+          );
+        });
+
+        goldButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "#0093FF";
+          silverButton.style.color = "white";
+          goldButton.style.backgroundColor = "white";
+          goldButton.style.color = "#0093FF";
+          platinumButton.style.backgroundColor = "#0093FF";
+          platinumButton.style.color = "white";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.gold[index])
+          );
+        });
+
+        platinumButton.addEventListener("click", () => {
+          silverButton.style.backgroundColor = "#0093FF";
+          silverButton.style.color = "white";
+          goldButton.style.backgroundColor = "#0093FF";
+          goldButton.style.color = "white";
+          platinumButton.style.backgroundColor = "white";
+          platinumButton.style.color = "#0093FF";
+
+          membershipBenefitsArray.map(
+            (benefit, index) =>
+              (benefit.getElementsByTagName("span")[0].innerHTML =
+                benefitsText.platinum[index])
+          );
+        });
+      });
+    </script>
+
+    <!-- use javascript to make this a hamburger menu -->
+    <nav class="NavContainer">
+      <a href="./index.html" class="NavLogoWrapper NavContentWrapper">
+        <span class="NavLogoTitle NavText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <div class="NavLinksWrapper NavContentWrapper">
+        <a href="./aboutus.html" class="NavLink NavText">About Us</a>
+        <a href="./memberships.html" class="NavLink NavText">Memberships</a>
+        <a href="./events.html" class="NavLink NavText">Events</a>
+        <a href="./services.html" class="NavLink NavText">Services</a>
+        <a href="./contact.html" class="NavLink NavText">Contact Us</a>
+        <a href="./faq.html" class="NavLink NavText">FAQ</a>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="HomeHeader">
+      <div class="HeaderPlain Header">
+        <div class="HeaderText">Join Studio Fit Now</div>
+        <div class="HomeHeaderSubtext">
+          For the first 3 months, every member gets 50% off
+        </div>
+        <div class="HomeHeaderButtonsWrapper">
+          <button class="HomeHeaderButton HomeHeaderPinkButton">
+            Sign up now
+          </button>
+          <button class="HomeHeaderButton HomeHeaderWhiteButton">About Us</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body Section -->
+    <main>
+      <div class="MembershipOffersWrapper">
+        <div class="HomeSectionContent">
+          <div class="MembershipOffersTitle">Our Membership Offers</div>
+          <div class="MembershipOffersSubtitle">
+            Explore and compare the benefits of our silver, gold, and platinum
+            memberships.
+          </div>
+          <div class="MembershipOffersMainContent">
+            <div class="MembershipBenefitsWrapper">
+              <div class="MembershipBenefits">
+                <span>First 3 months get 50% off</span>
+                <img src="img/checkmark-circle.svg" />
+              </div>
+              <div class="MembershipBenefits">
+                <span>Access to all services</span>
+                <img src="img/checkmark-circle.svg" />
+              </div>
+              <div class="MembershipBenefits">
+                <span>Personalized workout plan</span>
+                <img src="img/checkmark-circle.svg" />
+              </div>
+              <div class="MembershipBenefits">
+                <span>Bring 1 guest anytime</span>
+                <img src="img/checkmark-circle.svg" />
+              </div>
+            </div>
+            <div class="MembershipButtonsWrapper">
+              <button class="SilverButton MembershipButton Selected">
+                <span class="MembershipButtonTitle">Silver</span>
+                <span class="MembershipButtonTextWrapper">
+                  <span class="MembershipButtonCostText">$16</span>
+                  <span class="MembershipButtonSubtext">per month</span>
+                </span>
+              </button>
+              <button class="GoldButton MembershipButton Unselected">
+                <span class="MembershipButtonTitle">Gold</span>
+                <span class="MembershipButtonTextWrapper">
+                  <span class="MembershipButtonCostText">$24</span>
+                  <span class="MembershipButtonSubtext">per month</span>
+                </span>
+              </button>
+              <button class="PlatinumButton MembershipButton Unselected">
+                <span class="MembershipButtonTitle">Platinum</span>
+                <span class="MembershipButtonTextWrapper">
+                  <span class="MembershipButtonCostText">$40</span>
+                  <span class="MembershipButtonSubtext">per month</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <a class="MembershipLearnMoreButton" href="./memberships.html">
+            Learn more
+          </a>
+        </div>
+      </div>
+
+      <div class="ServicesWrapper">
+        <div class="HomeSectionContent">
+          <div class="ColorHeader">
+            <div class="HeaderPlain Header">
+              <div class="HeaderText HeaderTextBlack">Our Services</div>
+              <hr class="DividerBlack" />
+            </div>
+          </div>
+          <div class="ServicesBoxesWrapper">
+            <div class="ServicesBox">
+              <div>
+                <div class="ServicesBoxTitle">Strength Training</div>
+                <div class="ServicesBoxText">
+                  We provide personal trainers to help you maintain your workout
+                  goals.
+                </div>
+              </div>
+              <a class="ServicesBoxLink" href="./services.html"> Read More </a>
+            </div>
+            <div class="ServicesBox">
+              <div>
+                <div class="ServicesBoxTitle">Pilates Classes</div>
+                <div class="ServicesBoxText">
+                  Pilates classes are free for 18 and under! Join us for Barre and
+                  Reformer lessons.
+                </div>
+              </div>
+              <a class="ServicesBoxLink" href="./services.html"> Read More </a>
+            </div>
+            <div class="ServicesBox">
+              <div>
+                <div class="ServicesBoxTitle">Dance Studio</div>
+                <div class="ServicesBoxText">
+                  A dance studio with all-round mirrors is available for booking.
+                </div>
+              </div>
+              <a class="ServicesBoxLink" href="./services.html"> Read More </a>
+            </div>
+            <div class="ServicesBox">
+              <div>
+                <div class="ServicesBoxTitle">Massage Chairs</div>
+                <div class="ServicesBoxText">
+                  Cool down and stretch your muscles after a hard day of
+                  exercising.
+                </div>
+              </div>
+              <a class="ServicesBoxLink" href="./services.html"> Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="UpcomingEventsWrapper">
+        <div class="HomeSectionContent">
+          <div class="UpcomingEventsTitle">Upcoming Events</div>
+          <div class="UpcomingEventsSubtitle">
+            Look out for upcoming events at our gym!
+          </div>
+          <div class="UpcomingEventsBlackContainer">
+            <div class="UpcomingEventsBlackContainerLeft">
+              <div class="UpcomingEventsDateText">27 Nov</div>
+              <div class="UpcomingEventsBlackContainerTitle">
+                Pilates Reformer Class for Beginners
+              </div>
+              <div class="UpcomingEventsBlackContainerText">
+                Join our class and discover the transformative power of Pilates in
+                a small, supportive class led by certified instructors. Perfect
+                for newcomers, you'll learn foundational movements, improve your
+                strength and flexibility, and leave with a heightened mind-body
+                connection.
+              </div>
+              <button class="UpcomingEventsBlackContainerButton">
+                Register Now
+              </button>
+            </div>
+            <img src="img/PilatesClass.png" style="border-radius: 10px" />
+          </div>
+          <div class="UpcomingEventsBlackContainer">
+            <div class="UpcomingEventsBlackContainerLeft">
+              <div class="UpcomingEventsDateText">27 Nov</div>
+              <div class="UpcomingEventsBlackContainerTitle">
+                Strength Training Class
+              </div>
+              <div class="UpcomingEventsBlackContainerText">
+                Elevate your fitness with our class, suitable for all levels. Join
+                us to build muscle, increase endurance, and experience the
+                benefits of a full-body workout under the expert guidance of our
+                trainers.
+              </div>
+              <button class="UpcomingEventsBlackContainerButton">
+                Register Now
+              </button>
+            </div>
+            <img src="img/StrengthClass.png" style="border-radius: 10px" />
+          </div>
+          <!-- <a class="UpcomingEventsPinkButton" href="./events.html">
+            View all events
+          </a> -->
+        </div>
+      </div>
 
 
+      <div class="ContactUsWrapper">
+        <div class="HomeSectionContent">
+          <div class="ColorHeader BlackHeader">
+            <div class="HeaderText">Contact Us</div>
+            <hr />
+          </div>
+          <div class="HeaderSubtext" style="margin-top: 34px">
+            Fill out the form to receive notifications and updates!
+          </div>
+          <div class="ContactUsFormWrapper">
+            <form>
+              <div class="ContactField">
+                <label for="name">Name</label>
+                <input type="text" id="InputField" />
+              </div>
+  
+              <div class="ContactField">
+                <label for="email">E-mail</label>
+                <input type="text" id="InputField" />
+              </div>
+  
+              <div class="ContactField">
+                <label for="number">Phone Number</label>
+                <input type="text" id="InputField" />
+              </div>
+  
+              <div class="ContactField">
+                <label>Message</label>
+                <textarea id="InputField" style="width: 100%"></textarea>
+              </div>
+  
+              <input class="ContactSubmitButton" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
-	<!-- Body Section -->
-	<main>
-	</main>
-
-
-
-	<!-- Footer Section -->
-	<footer class="FooterContainer">
-    <a href="#" class="FooterContentWrapper">
-      <span class="FooterContentText">Studio Fit</span>
-      <img src="img/logo.svg" />
-    </a>
-    <a href="" class="FooterContentWrapper">
-      <img src="img/phone.svg" />
-      <span class="FooterContentText">917-614-8888</span>
-    </a>
-  </footer>
-	<!-- Custom Js Included -->
-	<script src="js/script.js"></script>
-</body>
-
+    <!-- Footer Section -->
+    <footer class="FooterContainer">
+      <a href="#" class="FooterContentWrapper">
+        <span class="FooterContentText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <a href="" class="FooterContentWrapper">
+        <img src="img/phone.svg" />
+        <span class="FooterContentText">917-614-8888</span>
+      </a>
+    </footer>
+    <!-- Custom Js Included -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
