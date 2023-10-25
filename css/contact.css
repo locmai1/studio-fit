@@ -5,38 +5,38 @@ body {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 label {
-  font-size: 15px;
-  font-weight: 700;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 main {
-  min-height: 80vh;
+	min-height: 80vh;
 }
 
 section {
-  height: 60vh back;
-  border-radius: 10px;
-  background: #fff;
-  display: flex;
-  padding: 48px;
-  flex-direction: column;
-  gap: 16px;
-  margin-inline: 315px;
-  margin: 100px auto auto auto;
-  width: 650px;
+	height: 60vh back;
+	border-radius: 10px;
+	background: #fff;
+	display: flex;
+	padding: 48px;
+	flex-direction: column;
+	gap: 16px;
+	margin-inline: 315px;
+	margin: 100px auto auto auto;
+	width: 650px;
 }
 
 /* Class CSS */
 .ContactField {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 }
 
 .ContactSubmitButton {
@@ -53,8 +53,10 @@ section {
 
 /* ID CSS */
 #InputField {
-  border-radius: 6px;
-  border: 1px solid #c4c4c4;
-  background: #fff;
-  padding-inline: 8px;
+	border-radius: 6px;
+	border: 1px solid #c4c4c4;
+	background: #fff;
+	padding-inline: 8px;
+	height: 36px;
+	max-height: 100%;
 }
