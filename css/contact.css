@@ -1,7 +1,7 @@
 /* Tag CSS */
 body {
-  margin: 0px;
-  background-color: black;
+	margin: 0px;
+	background-color: black;
 }
 
 form {
@@ -26,10 +26,8 @@ section {
 	display: flex;
 	padding: 48px;
 	flex-direction: column;
-	gap: 16px;
-	margin-inline: 315px;
 	margin: 100px auto auto auto;
-	width: 650px;
+	width: 50%;
 }
 
 /* Class CSS */
@@ -40,15 +38,15 @@ section {
 }
 
 .ContactSubmitButton {
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  background-color: #ff0058;
-  border-radius: 8px;
-  border: none;
-  width: 100%;
-  padding: 8px;
-  cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+	background-color: #ff0058;
+	border-radius: 8px;
+	border: none;
+	width: 100%;
+	padding: 8px;
+	cursor: pointer;
 }
 
 /* ID CSS */
@@ -59,4 +57,12 @@ section {
 	padding-inline: 8px;
 	height: 36px;
 	max-height: 100%;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	section {
+		width: 50%;
+		margin-inline: 20%;
+	}
 }
