@@ -12,8 +12,9 @@
       name="keywords"
       content="gym, fitness, personal training, group fitness, exercise, health"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <title>Studio Fit</title>
+    <title>About Us</title>
     <!-- Favicon Included -->
     <link
       rel="icon"
@@ -83,12 +84,14 @@
         </p>
         <div class="AboutImageWrapper">
           <img
+            class="AboutImage"
             src="./img/gymPic.png"
             alt="My Image"
             width="100%"
             height="100%"
           />
           <img
+            class="AboutImage"
             src="./img/gymPic2.png"
             alt="My Image"
             width="100%"
@@ -113,5 +116,14 @@
     <!-- Custom Js Included -->
     <script src="js/script.js"></script>
     <script src="js/hamburger.js"></script>
+    <script>
+      $(document).ready(function () {
+        const images = $(".AboutImage");
+
+        images.css("opacity", "0");
+
+        images.animate({ opacity: 1 }, 2000);
+      });
+    </script>
   </body>
 </html>

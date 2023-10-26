@@ -11,6 +11,7 @@
       name="keywords"
       content="gym, fitness, personal training, group fitness, exercise, health"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <title>FAQ Page</title>
 
@@ -141,5 +142,14 @@
     </footer>
 
     <script src="js/hamburger.js"></script>
+    <script>
+      $(document).ready(function () {
+        const containers = $("container");
+
+        containers.css("opacity", "0");
+
+        containers.animate({ opacity: 1 }, 2000);
+      });
+    </script>
   </body>
 </html>
