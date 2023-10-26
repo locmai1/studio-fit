@@ -7,10 +7,12 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 128px;
+  /* padding-inline: 5%; */
+  /* padding-inline: 128px; */
+  padding-inline: 1%;
   padding-block: 24px;
   height: 90vh;
-  width: 1024px;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -18,6 +20,7 @@ ul {
   max-width: 300px;
   list-style-position: inside;
   margin: auto;
+  padding: 0 15px 0 15px;
 }
 
 li {
@@ -27,7 +30,7 @@ li {
 /* Class CSS */
 .MembershipContainer {
   display: flex;
-  width: 330px;
+  max-width: 330px;
   padding: 36px 24px;
   align-items: center;
   gap: 10px;
@@ -79,4 +82,16 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media (max-width: 930px) {
+  section {
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  ul {
+    margin-bottom: 58px;
+  }
 }

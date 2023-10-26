@@ -1,137 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Services</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Studio Fit is a premium gym offering personal training, group fitness classes, and more to help you achieve your fitness goals." />
+    <meta name="keywords" content="gym, fitness, personal training, group fitness, exercise, health" />
+    
+    <title>Services</title>
 
-		<!-- Favicon Included -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="img/favicon-32x32.png" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="img/favicon-16x16.png" />
+    <!-- Favicon Included -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
 
-		<!-- Main Stylesheet Included -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
-		<link rel="stylesheet" type="text/css" href="css/header.css" />
-		<link rel="stylesheet" type="text/css" href="css/services.css" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
-	</head>
+    <!-- Main Stylesheet Included -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/services.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  </head>
 
-	<body>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				/* Services array to display on page */
-				const services = [
-					{
-						title: "Strength Training",
-						description:
-							"We provide personal trainers to help you maintain your workout goals.",
-						imgLink: "img/Strength.png",
-					},
-					{
-						title: "Pilates Classes",
-						description:
-							"Pilates classes are free for 18 and under! Join us for Barre and Reformer lessons.",
-						imgLink: "img/Pilates.png",
-					},
-					{
-						title: "Dance Studio",
-						description:
-							"A dance studio with all-round mirrors is available for booking.",
-						imgLink: "img/Dance.png",
-					},
-					{
-						title: "Massage Chairs",
-						description:
-							"Cool down and stretch your muscles after a hard day of exercising.",
-						imgLink: "img/Massage.png",
-					},
-				];
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /* Services array to display on page */
+        const services = [
+          {
+            title: "Strength Training",
+            description:
+              "We provide personal trainers to help you maintain your workout goals.",
+            imgLink: "img/Strength.png",
+          },
+          {
+            title: "Pilates Classes",
+            description:
+              "Pilates classes are free for 18 and under! Join us for Barre and Reformer lessons.",
+            imgLink: "img/Pilates.png",
+          },
+          {
+            title: "Dance Studio",
+            description:
+              "A dance studio with all-round mirrors is available for booking.",
+            imgLink: "img/Dance.png",
+          },
+          {
+            title: "Massage Chairs",
+            description:
+              "Cool down and stretch your muscles after a hard day of exercising.",
+            imgLink: "img/Massage.png",
+          },
+        ];
 
-				var servicesBody = document.getElementById("ServicesBody");
+        var servicesBody = document.getElementById("ServicesBody");
+        var servicesBodyMobile = document.getElementById("ServicesBodyMobile");
 
-				/* Put each service div onto the page */
-				services.map((service, index) => {
-					const serviceDiv = document.createElement("div");
-					serviceDiv.classList.add("Service");
+        /* Put each service div onto the page */
+        services.map((service, index) => {
+          /* For Desktop */
+          const serviceDiv = document.createElement("div");
+          serviceDiv.classList.add("Service");
 
-					const textWrapper = document.createElement("div");
-					textWrapper.classList.add("ServiceTextWrapper");
+          const textWrapper = document.createElement("div");
+          textWrapper.classList.add("ServiceTextWrapper");
 
-					const title = document.createElement("div");
-					title.innerHTML = service.title;
-					title.classList.add("ServiceTitle");
+          const title = document.createElement("div");
+          title.innerHTML = service.title;
+          title.classList.add("ServiceTitle");
 
-					const description = document.createElement("div");
-					description.innerHTML = service.description;
-					description.classList.add("ServiceDescription");
+          const description = document.createElement("div");
+          description.innerHTML = service.description;
+          description.classList.add("ServiceDescription");
 
-					const image = document.createElement("img");
-					image.src = service.imgLink;
-					image.classList.add("ServiceImage");
+          const image = document.createElement("img");
+          image.src = service.imgLink;
+          image.classList.add("ServiceImage");
 
-					textWrapper.appendChild(title);
-					textWrapper.appendChild(description);
+          textWrapper.appendChild(title);
+          textWrapper.appendChild(description);
 
-					/* Alternate image/text styling on page */
-					if (index % 2 === 0) {
-						serviceDiv.appendChild(textWrapper);
-						serviceDiv.appendChild(image);
-					} else {
-						serviceDiv.appendChild(image);
-						serviceDiv.appendChild(textWrapper);
-					}
+          /* Alternate image/text styling on page */
+          if (index % 2 === 0) {
+            serviceDiv.appendChild(textWrapper);
+            serviceDiv.appendChild(image);
+          } else {
+            serviceDiv.appendChild(image);
+            serviceDiv.appendChild(textWrapper);
+          }
 
-					servicesBody.appendChild(serviceDiv);
-				});
-			});
-		</script>
+          servicesBody.appendChild(serviceDiv);
 
-		<!-- Navbar -->
-		<nav class="NavContainer">
-			<a href="./index.html" class="NavLogoWrapper NavContentWrapper">
-				<span class="NavLogoTitle NavText">Studio Fit</span>
-				<img src="img/logo.svg" />
-			</a>
-			<div class="NavLinksWrapper NavContentWrapper">
-				<a href="./aboutus.html" class="NavLink NavText">About Us</a>
-				<a href="./memberships.html" class="NavLink NavText">Memberships</a>
-				<a href="./events.html" class="NavLink NavText">Events</a>
-				<a href="./services.html" class="NavLink NavText">Services</a>
-				<a href="./contact.html" class="NavLink NavText">Contact Us</a>
-				<a href="./faq.html" class="NavLink NavText">FAQ</a>
-			</div>
-		</nav>
+          /* For Mobile */
+          const serviceMobileDiv = document.createElement("div");
+          serviceMobileDiv.classList.add("Service");
 
-		<!-- Header Section -->
-		<header class="ColorHeader YellowHeader">
-			<div class="HeaderDivider Header">
-				<div class="HeaderText HeaderTextBlack">Services</div>
-				<hr class="DividerBlack" />
-			</div>
-		</header>
+          const textWrapperMobile = document.createElement("div");
 
-		<!-- Body Section -->
-		<main id="ServicesBody"></main>
+          if (index % 2 === 0) {
+            textWrapperMobile.classList.add("ServiceTextWrapperLeft");
+          } else {
+            textWrapperMobile.classList.add("ServiceTextWrapperRight");
+          }
 
-		<!-- Footer Section -->
-		<footer class="FooterContainer">
-			<a href="#" class="FooterContentWrapper">
-				<span class="FooterContentText">Studio Fit</span>
-				<img src="img/logo.svg" />
-			</a>
-			<a href="" class="FooterContentWrapper">
-				<img src="img/phone.svg" />
-				<span class="FooterContentText">917-614-8888</span>
-			</a>
-		</footer>
-	</body>
+          const titleMobile = document.createElement("div");
+          titleMobile.innerHTML = service.title;
+          titleMobile.classList.add("ServiceTitle");
+
+          const descriptionMobile = document.createElement("div");
+          descriptionMobile.innerHTML = service.description;
+          descriptionMobile.classList.add("ServiceDescription");
+
+          const imageMobile = document.createElement("img");
+          imageMobile.src = service.imgLink;
+          imageMobile.classList.add("ServiceImage");
+
+          textWrapperMobile.appendChild(titleMobile);
+          textWrapperMobile.appendChild(descriptionMobile);
+
+          serviceMobileDiv.appendChild(textWrapperMobile);
+          serviceMobileDiv.appendChild(imageMobile);
+
+          servicesBodyMobile.appendChild(serviceMobileDiv);
+        });
+      });
+    </script>
+
+    <!-- Navbar -->
+    <nav class="NavContainer">
+      <a href="./index.html" class="NavLogoWrapper NavContentWrapper">
+        <span class="NavLogoTitle NavText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <button id="menu-toggle" class="MenuToggle">
+        <img src="img/hamburger.svg"/>
+      </button>
+      <div id='nav-links' class="NavLinksWrapper NavContentWrapper">
+        <a href="./aboutus.html" class="NavLink NavText">About Us</a>
+        <a href="./memberships.html" class="NavLink NavText">Memberships</a>
+        <a href="./events.html" class="NavLink NavText">Events</a>
+        <a href="./services.html" class="NavLink NavText">Services</a>
+        <a href="./contact.html" class="NavLink NavText">Contact Us</a>
+        <a href="./faq.html" class="NavLink NavText">FAQ</a>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="ColorHeader YellowHeader">
+      <div class="HeaderDivider Header">
+        <div class="HeaderText HeaderTextBlack">Services</div>
+        <hr class="DividerBlack" />
+      </div>
+    </header>
+
+    <!-- Body Section -->
+    <main id="ServicesBody"></main>
+    <main id="ServicesBodyMobile"></main>
+
+    <!-- Footer Section -->
+    <footer class="FooterContainer">
+      <a href="#" class="FooterContentWrapper">
+        <span class="FooterContentText">Studio Fit</span>
+        <img src="img/logo.svg" />
+      </a>
+      <a href="" class="FooterContentWrapper">
+        <img src="img/phone.svg" />
+        <span class="FooterContentText">917-614-8888</span>
+      </a>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+  </body>
 </html>
