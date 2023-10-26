@@ -40,6 +40,12 @@
   text-decoration-line: none;
 }
 
+@media (max-width: 925px) {
+  .NavContainer {
+    padding-inline: 16px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .NavContainer {
     position: relative;
