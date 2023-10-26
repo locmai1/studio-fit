@@ -1,124 +1,124 @@
 .BlackHeader {
-	background-color: black;
+  background-color: black;
 }
 
 .BlueHeader {
-	background-color: #0093ff;
+  background-color: #0093ff;
 }
 
 .ColorHeader {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .ContactUsHeader {
-	padding: 177px 128px 20px;
+  padding: 177px 128px 20px;
 }
 
 .DividerBlack {
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
 .HeaderText {
-	color: white;
-	font-size: 36px;
-	font-weight: 700;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .HeaderTextBlack {
-	color: black;
+  color: black;
 }
 
 .HeaderSubtext {
-	color: white;
-	font-size: 24px;
-	font-weight: 400;
-	margin: 24px auto auto auto;
-	line-height: normal;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 24px auto auto auto;
+  line-height: normal;
 }
 
 .HomeHeader {
-	background: url(../img/hero.jpg) no-repeat center top;
-	background-size: cover;
-	padding: 150px 128px 148px;
+  background: url(../img/hero.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 150px 128px 148px;
 }
 
 .HomeHeaderButton {
-	padding: 16px 24px;
-	border-radius: 12px;
-	font-size: 24px;
-	border: none;
-	cursor: pointer;
-	color: black;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  color: black;
 }
 
 .HomeHeaderButtonsWrapper {
-	display: flex;
-	margin-top: 36px;
-	gap: 18px;
+  display: flex;
+  margin-top: 36px;
+  gap: 18px;
 }
 
 .HomeHeaderPinkButton {
-	background-color: #ff0058;
-	font-weight: 700;
+  background-color: #ff0058;
+  font-weight: 700;
 }
 
 .HomeHeaderSubtext {
-	font-size: 32px;
-	font-weight: 400;
-	color: white;
-	margin-top: 24px;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  margin-top: 24px;
 }
 
 .HomeHeaderWhiteButton {
-	background-color: white;
+  background-color: white;
 }
 
 .PinkHeader {
-	background-color: #ff0058;
+  background-color: #ff0058;
 }
 
 .YellowHeader {
-	background-color: #ffd000;
+  background-color: #ffd000;
 }
 
 .Header {
-	margin: auto;
+  margin: auto;
 }
 
 .HeaderDivider {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	gap: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 @media (max-width: 600px) {
-	.HomeHeader {
-		padding: 34px 27px 144px;
-	}
+  .HomeHeader {
+    padding: 34px 27px 144px;
+  }
 
-	.HomeHeaderSubtext {
-		line-height: normal;
-	}
+  .HomeHeaderSubtext {
+    line-height: normal;
+  }
 
-	.HeaderDivider {
-		width: 100%;
-		gap: 28px;
-		align-items: center;
-	}
+  .HeaderDivider {
+    width: 100%;
+    gap: 28px;
+    align-items: center;
+  }
 
-	header {
-		padding: 34px 24px;
-	}
+  header {
+    padding: 34px 24px;
+  }
 
-	.ContactUsHeader {
-		padding: 34px 24px 38px;
-	}
+  .ContactUsHeader {
+    padding: 34px 24px 38px;
+  }
 
-	.HeaderPlain {
-		width: 100%;
-	}
+  .HeaderPlain {
+    width: 100%;
+  }
 }
