@@ -7,10 +7,12 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 128px;
+  /* padding-inline: 5%; */
+  /* padding-inline: 128px; */
+  padding-inline: 1%;
   padding-block: 24px;
   height: 90vh;
-  /* width: 1024px; */
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -82,7 +84,7 @@ li {
   line-height: normal;
 }
 
-@media (max-width: 910px) {
+@media (max-width: 930px) {
   section {
     align-items: center;
     flex-direction: column;
