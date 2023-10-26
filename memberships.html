@@ -11,6 +11,7 @@
       name="keywords"
       content="gym, fitness, personal training, group fitness, exercise, health"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <title>Memberships</title>
 
@@ -66,7 +67,7 @@
 
     <!-- Body Section -->
     <section>
-      <div>
+      <div id="membership1">
         <div class="MembershipContainer MembershipSilver">
           <h2 class="MembershipTitle">Silver</h2>
           <div class="MembershipCostContainer">
@@ -85,7 +86,7 @@
         </ul>
       </div>
 
-      <div>
+      <div id="membership2">
         <div class="MembershipContainer MembershipGold">
           <h2 class="MembershipTitle">Gold</h2>
           <div class="MembershipCostContainer">
@@ -103,7 +104,7 @@
         </ul>
       </div>
 
-      <div>
+      <div id="membership3">
         <div class="MembershipContainer MembershipPlatinum">
           <h2 class="MembershipTitle">Platinum</h2>
           <div class="MembershipCostContainer">
@@ -140,6 +141,21 @@
     </footer>
 
     <script src="js/hamburger.js"></script>
+    <script>
+      $(document).ready(function () {
+        const membership1 = $("#membership1");
+        const membership2 = $("#membership2");
+        const membership3 = $("#membership3");
+
+        membership1.css("opacity", "0");
+        membership2.css("opacity", "0");
+        membership3.css("opacity", "0");
+
+        membership1.animate({ opacity: 1 }, 1000);
+        membership2.animate({ opacity: 1 }, 1500);
+        membership3.animate({ opacity: 1 }, 2000);
+      });
+    </script>
 
     <style>
       /* Tag CSS */
