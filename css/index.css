@@ -6,7 +6,7 @@
 }
 
 .HomeSectionContent {
-  width: 1024px;
+  /* width: 1024px; */
   margin: auto;
 }
 
@@ -40,7 +40,7 @@
   background-color: white;
   padding: 64px 48px;
   border-radius: 6px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .MembershipBenefits {
@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .MembershipButton {
@@ -131,7 +131,7 @@
   padding: 24px;
   background-color: white;
   border-radius: 6px;
-  width: 20%;
+  /* width: 20%; */
 }
 
 .ServicesBoxTitle {
@@ -179,6 +179,11 @@
   border-radius: 8px;
   background-color: black;
   margin-top: 60px;
+  align-items: center;
+}
+
+.UpcomingEventsBlackContainerMobile {
+  display: none;
 }
 
 .UpcomingEventsBlackContainerLeft {
@@ -244,5 +249,84 @@
   border-radius: 10px;
   padding: 48px;
   margin-top: 94px;
-  margin-inline: 200px;
+  margin-inline: 150px;
+}
+
+.BlackContainerImage {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-inline: 0px;
+  }
+
+  .ContactUsWrapper {
+    padding: 67px 24px 52px;
+  }
+
+  .ContactUsFormWrapper {
+    margin-inline: 0px;
+  }
+
+  .HomeSectionContent {
+    margin: 0;
+  }
+
+  .HomeHeaderButton {
+    align-items: center;
+    line-height: normal;
+  }
+
+  .HeaderText {
+    line-height: normal;
+  }
+
+  .MembershipButton {
+    gap: 10px;
+  }
+
+  .MembershipOffersMainContent {
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .MembershipOffersTitle {
+    line-height: normal;
+  }
+
+  .MembershipOffersSubtitle {
+    line-height: normal;
+  }
+
+  .MembershipOffersWrapper {
+    padding: 40px 24px 88px;
+  }
+
+  .ServicesWrapper {
+    padding: 34px 94px 98px 75px;
+  }
+
+  .ServicesBoxesWrapper {
+    flex-direction: column;
+  }
+
+  .UpcomingEventsWrapper {
+    padding: 38px 24px 76px;
+  }
+
+  .UpcomingEventsBlackContainer {
+    display: none;
+  }
+
+  .UpcomingEventsBlackContainerMobile {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 16px;
+    border-radius: 8px;
+    background-color: black;
+    margin-top: 60px;
+  }
 }

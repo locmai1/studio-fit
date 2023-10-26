@@ -4,23 +4,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Studio Fit is a premium gym offering personal training, group fitness classes, and more to help you achieve your fitness goals." />
-    <meta name="keywords" content="gym, fitness, personal training, group fitness, exercise, health" />
+    <meta
+      name="description"
+      content="Studio Fit is a premium gym offering personal training, group fitness classes, and more to help you achieve your fitness goals."
+    />
+    <meta
+      name="keywords"
+      content="gym, fitness, personal training, group fitness, exercise, health"
+    />
 
     <title>Studio Fit</title>
     <!-- Favicon Included -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
@@ -118,7 +112,10 @@
         <span class="NavLogoTitle NavText">Studio Fit</span>
         <img src="img/logo.svg" />
       </a>
-      <div class="NavLinksWrapper NavContentWrapper">
+      <button id="menu-toggle" class="MenuToggle">
+        <img src="img/hamburger.svg" />
+      </button>
+      <div id="nav-links" class="NavLinksWrapper NavContentWrapper">
         <a href="./aboutus.html" class="NavLink NavText">About Us</a>
         <a href="./memberships.html" class="NavLink NavText">Memberships</a>
         <a href="./events.html" class="NavLink NavText">Events</a>
@@ -131,10 +128,10 @@
     <!-- Header Section -->
     <header class="HomeHeader">
       <div class="HeaderPlain Header">
-        <div class="HeaderText">Join Studio Fit Now</div>
-        <div class="HomeHeaderSubtext">
+        <h1 class="HeaderText">Join Studio Fit Now</h1>
+        <h2 class="HomeHeaderSubtext">
           For the first 3 months, every member gets 50% off
-        </div>
+        </h2>
         <div class="HomeHeaderButtonsWrapper">
           <a
             class="HomeHeaderButton HomeHeaderPinkButton"
@@ -292,8 +289,37 @@
                 Register Now
               </button>
             </div>
-            <img src="img/PilatesClass.png" style="border-radius: 10px" />
+            <img
+              class="BlackContainerImage"
+              src="img/PilatesClass.png"
+              style="border-radius: 10px"
+            />
           </div>
+
+          <div class="UpcomingEventsBlackContainerMobile">
+            <img
+              class="BlackContainerImage"
+              src="img/PilatesClass.png"
+              style="border-radius: 10px"
+            />
+            <div class="UpcomingEventsBlackContainerLeft">
+              <div class="UpcomingEventsDateText">27 Nov</div>
+              <div class="UpcomingEventsBlackContainerTitle">
+                Pilates Reformer Class for Beginners
+              </div>
+              <div class="UpcomingEventsBlackContainerText">
+                Join our class and discover the transformative power of Pilates
+                in a small, supportive class led by certified instructors.
+                Perfect for newcomers, you'll learn foundational movements,
+                improve your strength and flexibility, and leave with a
+                heightened mind-body connection.
+              </div>
+              <button class="UpcomingEventsBlackContainerButton">
+                Register Now
+              </button>
+            </div>
+          </div>
+
           <div class="UpcomingEventsBlackContainer">
             <div class="UpcomingEventsBlackContainerLeft">
               <div class="UpcomingEventsDateText">27 Nov</div>
@@ -310,7 +336,34 @@
                 Register Now
               </button>
             </div>
-            <img src="img/StrengthClass.png" style="border-radius: 10px" />
+            <img
+              class="BlackContainerImage"
+              src="img/StrengthClass.png"
+              style="border-radius: 10px"
+            />
+          </div>
+
+          <div class="UpcomingEventsBlackContainerMobile">
+            <img
+              class="BlackContainerImage"
+              src="img/StrengthClass.png"
+              style="border-radius: 10px"
+            />
+            <div class="UpcomingEventsBlackContainerLeft">
+              <div class="UpcomingEventsDateText">27 Nov</div>
+              <div class="UpcomingEventsBlackContainerTitle">
+                Strength Training Class
+              </div>
+              <div class="UpcomingEventsBlackContainerText">
+                Elevate your fitness with our class, suitable for all levels.
+                Join us to build muscle, increase endurance, and experience the
+                benefits of a full-body workout under the expert guidance of our
+                trainers.
+              </div>
+              <button class="UpcomingEventsBlackContainerButton">
+                Register Now
+              </button>
+            </div>
           </div>
           <a class="UpcomingEventsPinkButton" href="./events.html">
             View all events
@@ -328,29 +381,33 @@
             Fill out the form to receive notifications and updates!
           </div>
           <div class="ContactUsFormWrapper">
-            <form>
+            <form id="contact-form" onsubmit="return validateForm();">
               <div class="ContactField">
                 <label for="name">Name</label>
-                <input type="text" id="InputField" />
+                <input type="text" id="name" />
+                <div class="ErrorMessage" id="name-error"></div>
               </div>
-
+            
               <div class="ContactField">
                 <label for="email">E-mail</label>
-                <input type="text" id="InputField" />
+                <input type="email" id="email" />
+                <div class="ErrorMessage" id="email-error"></div>
               </div>
-
+            
               <div class="ContactField">
                 <label for="number">Phone Number</label>
-                <input type="text" id="InputField" />
+                <input type="tel" id="phone" />
+                <div class="ErrorMessage" id="phone-error"></div>
               </div>
-
+            
               <div class="ContactField">
                 <label>Message</label>
-                <textarea id="InputField" style="width: 100%"></textarea>
+                <textarea id="message" style="width: 100%"></textarea>
+                <div class="ErrorMessage" id="message-error"></div>
               </div>
-
+            
               <input class="ContactSubmitButton" type="submit" />
-            </form>
+            </form> 
           </div>
         </div>
       </div>
@@ -369,5 +426,7 @@
     </footer>
     <!-- Custom Js Included -->
     <script src="js/script.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

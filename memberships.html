@@ -3,30 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Studio Fit is a premium gym offering personal training, group fitness classes, and more to help you achieve your fitness goals." />
-    <meta name="keywords" content="gym, fitness, personal training, group fitness, exercise, health" />
-    
+    <meta
+      name="description"
+      content="Studio Fit is a premium gym offering personal training, group fitness classes, and more to help you achieve your fitness goals."
+    />
+    <meta
+      name="keywords"
+      content="gym, fitness, personal training, group fitness, exercise, health"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <title>Memberships</title>
 
     <!-- Favicon Included -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
 
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
-    <link rel="stylesheet" type="text/css" href="css/memberships.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/memberships.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
 
@@ -38,9 +33,9 @@
         <img src="img/logo.svg" />
       </a>
       <button id="menu-toggle" class="MenuToggle">
-        <img src="img/hamburger.svg"/>
+        <img src="img/hamburger.svg" />
       </button>
-      <div id='nav-links' class="NavLinksWrapper NavContentWrapper">
+      <div id="nav-links" class="NavLinksWrapper NavContentWrapper">
         <a href="./aboutus.html" class="NavLink NavText">About Us</a>
         <a href="./memberships.html" class="NavLink NavText">Memberships</a>
         <a href="./events.html" class="NavLink NavText">Events</a>
@@ -53,16 +48,16 @@
     <!-- Header Section -->
     <header class="BlueHeader ColorHeader">
       <div class="HeaderDivider Header">
-        <div class="HeaderText">Memberships</div>
+        <h1 class="HeaderText">Memberships</h1>
         <hr />
       </div>
     </header>
 
     <!-- Body Section -->
     <section>
-      <div>
+      <div id="membership1">
         <div class="MembershipContainer MembershipSilver">
-          <div class="MembershipTitle">Silver</div>
+          <h2 class="MembershipTitle">Silver</h2>
           <div class="MembershipCostContainer">
             <div class="MembershipCost">$16</div>
             <div>per month</div>
@@ -79,9 +74,9 @@
         </ul>
       </div>
 
-      <div>
+      <div id="membership2">
         <div class="MembershipContainer MembershipGold">
-          <div class="MembershipTitle">Gold</div>
+          <h2 class="MembershipTitle">Gold</h2>
           <div class="MembershipCostContainer">
             <div class="MembershipCost">$24</div>
             <div>per month</div>
@@ -97,9 +92,9 @@
         </ul>
       </div>
 
-      <div>
+      <div id="membership3">
         <div class="MembershipContainer MembershipPlatinum">
-          <div class="MembershipTitle">Platinum</div>
+          <h2 class="MembershipTitle">Platinum</h2>
           <div class="MembershipCostContainer">
             <div class="MembershipCost">$40</div>
             <div>per month</div>
@@ -134,5 +129,116 @@
     </footer>
 
     <script src="js/hamburger.js"></script>
+    <script>
+      $(document).ready(function () {
+        const membership1 = $("#membership1");
+        const membership2 = $("#membership2");
+        const membership3 = $("#membership3");
+
+        membership1.css("opacity", "0");
+        membership2.css("opacity", "0");
+        membership3.css("opacity", "0");
+
+        membership1.animate({ opacity: 1 }, 1000);
+        membership2.animate({ opacity: 1 }, 1500);
+        membership3.animate({ opacity: 1 }, 2000);
+      });
+    </script>
+
+    <style>
+      /* Tag CSS */
+      section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding-inline: 5%; */
+        /* padding-inline: 128px; */
+        padding-inline: 1%;
+        padding-block: 24px;
+        height: 90vh;
+        max-width: 1024px;
+        margin: auto;
+      }
+
+      ul {
+        max-width: 300px;
+        list-style-position: inside;
+        margin: auto;
+        padding: 0 15px 0 15px;
+      }
+
+      li {
+        margin: 10px 0 10px 0;
+      }
+
+      /* Class CSS */
+      .MembershipContainer {
+        display: flex;
+        max-width: 330px;
+        padding: 36px 24px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        border: 3px solid #000;
+        margin-bottom: 32px;
+      }
+
+      .MembershipCostContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .MembershipCost {
+        color: #000;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .MembershipGold {
+        background: #ffd700;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .MembershipPlatinum {
+        background: #ebebeb;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .MembershipSilver {
+        background: #c4c4c4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .MembershipTitle {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      @media (max-width: 930px) {
+        section {
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        ul {
+          margin-bottom: 58px;
+        }
+      }
+    </style>
   </body>
 </html>
