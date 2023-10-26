@@ -64,34 +64,38 @@
       </div>
     </header>
 
-    <!-- Body Section -->
-    <main>
-      <section>
-        <form>
+		<!-- Body Section -->
+		<main>
+			<section>
+				<form id="contact-form">
           <div class="ContactField">
             <label for="name">Name</label>
-            <input type="text" id="InputField" />
+            <input type="text" id="name" />
+            <div class="ErrorMessage" id="name-error"></div>
           </div>
-
+        
           <div class="ContactField">
             <label for="email">E-mail</label>
-            <input type="email" id="InputField" />
+            <input type="email" id="email" />
+            <div class="ErrorMessage" id="email-error"></div>
           </div>
-
+        
           <div class="ContactField">
             <label for="number">Phone Number</label>
-            <input type="tel" id="InputField" />
+            <input type="tel" id="phone" />
+            <div class="ErrorMessage" id="phone-error"></div>
           </div>
-
+        
           <div class="ContactField">
             <label>Message</label>
-            <textarea id="InputField" style="width: 100%"></textarea>
+            <textarea id="message" style="width: 100%"></textarea>
+            <div class="ErrorMessage" id="message-error"></div>
           </div>
-
+        
           <input class="ContactSubmitButton" type="submit" />
-        </form>
-      </section>
-    </main>
+        </form>        
+			</section>
+		</main>
 
     <!-- Footer Section -->
     <footer class="FooterContainer">
@@ -106,5 +110,6 @@
     </footer>
 
     <script src="js/hamburger.js"></script>
-  </body>
+    <script src="js/form.js"></script>
+	</body>
 </html>

@@ -59,6 +59,10 @@ section {
   max-height: 100%;
 }
 
+.ErrorMessage {
+  color: lightcoral;
+}
+
 /* Mobile */
 @media (max-width: 780px) {
   main {
