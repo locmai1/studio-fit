@@ -18,6 +18,7 @@ ul {
   max-width: 300px;
   list-style-position: inside;
   margin: auto;
+  padding: 0 15px 0 15px;
 }
 
 li {
