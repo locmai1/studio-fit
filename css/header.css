@@ -93,11 +93,15 @@
   gap: 50px;
 }
 
-.HeaderPlain {
-  /* width: 1024px; */
-}
-
 @media (max-width: 600px) {
+  .HomeHeader {
+    padding: 34px 27px 144px;
+  }
+
+  .HomeHeaderSubtext {
+    line-height: normal;
+  }
+
   .HeaderDivider {
     width: 100%;
     gap: 28px;
