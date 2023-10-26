@@ -14,8 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <title>Contact Us</title>
-
     <!-- Favicon Included -->
+    <link rel="icon" type="image/x-icon" href="img/favicon-16.png" />
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css" />
@@ -53,38 +53,38 @@
       </div>
     </header>
 
-		<!-- Body Section -->
-		<main>
-			<section>
-				<form id="contact-form" onsubmit="return validateForm();">
+    <!-- Body Section -->
+    <main>
+      <section>
+        <form id="contact-form" onsubmit="return validateForm();">
           <div class="ContactField">
             <label for="name">Name</label>
             <input type="text" id="name" />
             <div class="ErrorMessage" id="name-error"></div>
           </div>
-        
+
           <div class="ContactField">
             <label for="email">E-mail</label>
             <input type="email" id="email" />
             <div class="ErrorMessage" id="email-error"></div>
           </div>
-        
+
           <div class="ContactField">
             <label for="number">Phone Number</label>
             <input type="tel" id="phone" />
             <div class="ErrorMessage" id="phone-error"></div>
           </div>
-        
+
           <div class="ContactField">
             <label>Message</label>
             <textarea id="message" style="width: 100%"></textarea>
             <div class="ErrorMessage" id="message-error"></div>
           </div>
-        
+
           <input class="ContactSubmitButton" type="submit" />
-        </form>        
-			</section>
-		</main>
+        </form>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="FooterContainer">
@@ -101,7 +101,7 @@
     <script src="js/hamburger.js"></script>
     <script src="js/form.js"></script>
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         const form = $("#contact-form");
 
         form.css("opacity", "0");
@@ -109,5 +109,5 @@
         form.animate({ opacity: 1 }, 2000);
       });
     </script>
-	</body>
+  </body>
 </html>
