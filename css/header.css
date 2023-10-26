@@ -87,14 +87,10 @@
 }
 
 .HeaderDivider {
-  width: 1024px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 50px;
-}
-
-.HeaderPlain {
-  /* width: 1024px; */
 }
 
 @media (max-width: 600px) {
